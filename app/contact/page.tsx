@@ -248,18 +248,31 @@ const ContactPage = () => {
 
       {/* Map Section or bottom highlight */}
       <section className="bg-white py-1 relative">
-         <div className="h-[400px] w-full bg-gray-100 relative">
-            {/* Visual Placeholder for Map */}
-            <div className="absolute inset-0 flex items-center justify-center">
-               <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto">
-                     <MapPin className="text-gold" size={32} />
-                  </div>
-                  <p className="text-black font-black uppercase tracking-[0.3em] text-sm italic">Sheikh Zayed Road HQ</p>
-               </div>
-            </div>
-            {/* You can add real iframe here if desired */}
-         </div>
+        <div className="h-[420px] w-full relative overflow-hidden">
+          <iframe
+            title="Golden Legacy Location - Sheikh Zayed Road, Dubai"
+            src="https://www.google.com/maps?q=Sheikh+Zayed+Road+Dubai+UAE&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0"
+          />
+
+          <div className="absolute left-4 bottom-4 md:left-8 md:bottom-8 bg-black/80 backdrop-blur-sm rounded-2xl px-4 py-3 border border-white/10">
+            <p className="text-white font-black uppercase tracking-[0.2em] text-[10px] md:text-xs">Sheikh Zayed Road HQ</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Sheikh+Zayed+Road+Dubai+UAE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold text-xs md:text-sm font-semibold hover:text-gold/80 transition-colors"
+            >
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
