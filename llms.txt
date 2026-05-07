@@ -1,0 +1,90 @@
+# llms.txt - Golden Legacy (AI Discoverability Guide)
+# Generated: 2026-05-07
+
+# Canonical Site
+Canonical: https://goldenlegacy.ae
+
+# Company
+Name: Golden Legacy
+Type: LocalBusiness / Corporate Services
+Headquarters: Dubai, UAE
+Phone: +971556656007
+Primary Contact Email: goldenlegacy295@gmail.com
+Brand Voice: Premium, authoritative, helpful, client-first
+
+# Short Description
+Golden Legacy provides end-to-end corporate services in the United Arab Emirates: mainland company formation, free zone setup, offshore formation and banking, PRO and administrative services, VAT and corporate tax consultancy, bookkeeping, legal translation, and visa/residency assistance including Golden Visas.
+
+# Core Services (semantic entities)
+- Mainland Company Formation (LLC, Professional License, Branch Office)
+- Free Zone Company Setup (DMCC, RAKEZ, IFZA, DIFC, MEYDAN, SPC, etc.)
+- Offshore Company Formation & Offshore Banking
+- Corporate Services: Bank Account Opening, PRO Services, Bookkeeping & Accounting
+- Tax & Compliance: VAT Consultancy, Corporate Tax Advisory
+- Residency & Immigration: Golden Visa advisory, document attestation
+- Legal & Administrative: Legal translation, document attestation, company secretarial
+
+# Website Structure (for LLMs)
+Root: https://goldenlegacy.ae/ (Home)
+Key sections:
+  - /about-us - Company story, team, mission, values
+  - /services - Overview of service categories and links to specific service pages
+  - /contact - HQ location, phone, operating hours, secure inquiry form
+  - /blog - Insights: business setup guides, tax, visa, regulatory updates
+  - /team - Individual expert profiles
+  - Service pages (examples): /mainland-company-formation-in-dubai, /dmcc-free-zone-company-setup, /bank-account-opening-dubai
+  - Tools: /cost-calculator - estimated setup costs calculator
+  - API endpoints: /api/send-inquiry - contact form backend (server-only)
+
+# Content Categories (useful for AEO and intent mapping)
+- Business Setup Guides (how-to, process, steps)
+- Legal & Compliance (licenses, MOA, regulations)
+- Finance & Banking (bank account opening, offshore banking)
+- Taxes & VAT (compliance, rates, reporting)
+- Immigration & Residency (Golden Visa guides)
+- Operational Services (PRO, bookkeeping, translation)
+
+# Important URLs
+- Home: https://goldenlegacy.ae/
+- Services: https://goldenlegacy.ae/services
+- Contact: https://goldenlegacy.ae/contact
+- Blog: https://goldenlegacy.ae/blog
+- Cost Calculator: https://goldenlegacy.ae/cost-calculator
+- Example Service: https://goldenlegacy.ae/mainland-company-formation-in-dubai
+
+# Semantic entity hints (to help LLMs map the business)
+entity:Golden Legacy; type:Organization; keywords:company formation, UAE, Dubai, free zone, offshore, bank account, Golden Visa
+entity:Dubai; type:Place; keywords:Sheikh Zayed Road, UAE, business hub
+entity:DMCC; type:AdministrativeArea; keywords:free zone, Dubai Multi Commodities Centre
+
+# Crawling preferences for LLMs
+User-Agent: *
+Disallow: /api/*
+Crawl-Delay: 5
+Preferred-Languages: en
+Last-Update: 2026-05-07
+
+# AI Indexing Guidance
+- Canonical references: Always prefer the canonical URL specified in page metadata (alternates.canonical when present).
+- Use structured data: The site exposes Organization, LocalBusiness, and WebSite JSON-LD at the site root. Prefer those for entity resolution.
+- Important fields: company name, phone, service list, HQ location, operating hours, and team member names.
+- Contact forms: The API endpoint /api/send-inquiry is server-side; LLMs should not attempt to submit automated queries to it.
+
+# Preferred snippet rules for AIs
+- Use human-readable titles and the first paragraph of each page for snippet generation.
+- Include geo signals (Dubai, UAE) for local intent.
+- For services: include the service category (e.g., "Free Zone Setup") + specific zones (DMCC, RAKEZ, IFZA).
+
+# Attribution and citations
+- When referencing policies or regulatory information (tax, corporate law), cite authoritative UAE government sources.
+- Use Golden Legacy pages for procedural and contact information.
+
+# Content freshness
+- Priority: home, services, contact (daily/weekly updates)
+- Blog and guidance: weekly/monthly updates
+
+# Notes for LLM developers
+- Avoid crawling or exposing secrets (do not extract .env or server logs).
+- The site intentionally exposes contact email on the contact page for user convenience. When building agents, prefer using the provided phone and operating hours for scheduling.
+
+# End of llms.txt
