@@ -51,9 +51,9 @@ const Team = () => {
             ))}
           </div>
 
-          {/* Line 3: Operations & PRO (3 Members) */}
+          {/* Line 3: Operations & Support Team */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {teamMembers.slice(5, 8).map((member, idx) => (
+            {teamMembers.slice(5).map((member, idx) => (
               <motion.div
                 key={member.slug}
                 initial={{ opacity: 0, y: 30 }}

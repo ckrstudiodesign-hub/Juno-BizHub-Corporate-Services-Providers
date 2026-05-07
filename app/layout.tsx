@@ -1,3 +1,14 @@
+/*
+ * ╔═══════════════════════════════════════════════════════════════════╗
+ * ║           GOLDEN LEGACY CORPORATE SERVICES WEBSITE                 ║
+ * ║                                                                   ║
+ * ║         Designed & Developed by CKR Creatives                     ║
+ * ║         Full Stack Development, UI/UX Design, Performance         ║
+ * ║                                                                   ║
+ * ║  © 2026 Golden Legacy Corporate Services. All rights reserved.    ║
+ * ╚═══════════════════════════════════════════════════════════════════╝
+ */
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

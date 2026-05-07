@@ -1,6 +1,9 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';// ========================================
+// Designed & Developed by CKR Creatives
+// Golden Legacy Corporate Services Website
+// ========================================
 import Hero from '@/components/home/Hero';
 import TrustBadges from '@/components/home/TrustBadges';
 

@@ -1,3 +1,9 @@
+/*
+ * Navbar Component
+ * Designed & Developed by CKR Creatives
+ * Navigation header with responsive design and premium branding
+ */
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
