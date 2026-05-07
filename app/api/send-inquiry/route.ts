@@ -4,7 +4,21 @@ import { sanitizeInput, validateFormData, escapeHtml } from '@/lib/security';
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    // Get raw text first to debug JSON issues
+    const text = await request.text();
+    
+    // Try to parse JSON with better error handling
+    let body: any;
+    try {
+      body = JSON.parse(text);
+    } catch (parseError) {
+      console.error('[JSON Parse Error] Raw body:', text);
+      console.error('[JSON Parse Error] Error:', parseError instanceof Error ? parseError.message : 'Unknown error');
+      return NextResponse.json(
+        { error: 'Invalid JSON format' },
+        { status: 400 }
+      );
+    }
 
     // ✅ SECURITY: Validate input data
     const validation = validateFormData(body);
