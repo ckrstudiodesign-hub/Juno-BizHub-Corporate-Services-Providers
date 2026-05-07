@@ -23,6 +23,7 @@ const Stats = dynamic(() => import('@/components/home/Stats'));
 const WhyChooseUs = dynamic(() => import('@/components/home/WhyChooseUs'));
 const Testimonials = dynamic(() => import('@/components/home/Testimonials'));
 const FAQ = dynamic(() => import('@/components/home/FAQ'));
+const LocationMap = dynamic(() => import('@/components/home/LocationMap'));
 const Team = dynamic(() => import('@/components/about/Team'));
 const ContactBanner = dynamic(() => import('@/components/home/ContactBanner'));
 
@@ -39,6 +40,7 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <FAQ />
+      <LocationMap />
       <ContactBanner />
     </div>
   );
