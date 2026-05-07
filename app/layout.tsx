@@ -18,6 +18,7 @@ import LeadModal from "@/components/LeadModal";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import SeoSchemas from "@/components/SeoSchemas";
 import Analytics from "@/components/Analytics";
+import DisableLegacyServiceWorker from "@/components/DisableLegacyServiceWorker";
 import type { Metadata } from "next";
 import { Inter, Roboto_Slab, Roboto_Condensed } from "next/font/google";
 
@@ -119,6 +120,7 @@ export default function RootLayout({
     <html lang="en-AE" className="scroll-smooth">
       <body className={`${inter.variable} ${robotoSlab.variable} ${robotoCondensed.variable} font-sans antialiased bg-background text-foreground`}>
         <Analytics />
+        <DisableLegacyServiceWorker />
         <SeoSchemas />
         <Navbar />
         <SocialSidebar />
