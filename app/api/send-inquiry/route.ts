@@ -39,8 +39,8 @@ export async function POST(request: NextRequest) {
       serviceType: body.serviceType ? sanitizeInput(body.serviceType) : undefined,
     };
 
-    // ✅ SECURITY: Get email from environment (not hardcoded)
-    const recipientEmail = process.env.NEXT_PUBLIC_RECIPIENT_EMAIL || 'inquiry@goldenlegacy.ae';
+    // ✅ SECURITY: Prefer server-only env var, keep public fallback for compatibility
+    const recipientEmail = process.env.RECIPIENT_EMAIL || process.env.NEXT_PUBLIC_RECIPIENT_EMAIL || 'inquiry@goldenlegacy.ae';
 
     let emailContent = '';
     let subject = '';
