@@ -172,6 +172,7 @@ const CostCalculatorPage = () => {
   });
   const [isFinalizing, setIsFinalizing] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [submissionError, setSubmissionError] = useState('');
 
   const progress = ((currentStep + 1) / (steps.length + 1)) * 100;
 
@@ -197,6 +198,7 @@ const CostCalculatorPage = () => {
     e.preventDefault();
     console.log('Final submit triggered', formData);
     setIsFinalizing(true);
+    setSubmissionError('');
     
     try {
       const response = await fetch('/api/send-inquiry', {
@@ -216,14 +218,20 @@ const CostCalculatorPage = () => {
         setShowModal(true);
         setTimeout(() => setShowModal(false), 2000);
       } else {
-        throw new Error('Failed to submit');
+        let errorMessage = 'Failed to submit';
+        try {
+          const data = await response.json();
+          errorMessage = data?.error || errorMessage;
+        } catch {
+          // Keep the default message if the response body is not JSON.
+        }
+        setSubmissionError(errorMessage);
+        setIsFinalizing(false);
       }
     } catch (error) {
       console.error('Error submitting cost calculator:', error);
       setIsFinalizing(false);
-      // Still show modal even if email failed
-      setShowModal(true);
-      setTimeout(() => setShowModal(false), 2000);
+      setSubmissionError('Network error. Please try again.');
     }
   };
 
@@ -405,6 +413,11 @@ const CostCalculatorPage = () => {
                           />
                        </div>
                        <div className="md:col-span-2 pt-6">
+                          {submissionError && (
+                            <div className="mb-4 bg-red-50 border border-red-200 rounded-2xl p-4 text-red-700 text-sm font-medium">
+                              {submissionError}
+                            </div>
+                          )}
                           <button 
                             disabled={isFinalizing}
                             type="submit" 
