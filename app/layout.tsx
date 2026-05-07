@@ -88,6 +88,9 @@ export const metadata: Metadata = {
       "Dubai business setup, corporate services UAE, and banking support for ambitious founders.",
     images: ["/golden-logo.png"],
   },
+  verification: {
+    google: "VTKU994T1ZGZJd8ZATmJuKsyvuc4UoL6Yx4IRAPiz8I",
+  },
   robots: {
     index: true,
     follow: true,
