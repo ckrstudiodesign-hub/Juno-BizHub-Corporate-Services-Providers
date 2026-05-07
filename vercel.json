@@ -1,5 +1,18 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "goldenlegacy.ae"
+        }
+      ],
+      "destination": "https://www.goldenlegacy.ae/:path*",
+      "permanent": true
+    }
+  ],
   "builds": [
     { "src": "next.config.js", "use": "@vercel/next" }
   ],

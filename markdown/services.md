@@ -1,7 +1,7 @@
 ---
 title: "Services — Golden Legacy Corporate Services"
 meta_description: "Tailored corporate solutions in the UAE: mainland & free zone company formation, bank account opening, VAT & corporate tax consultancy, PRO services, bookkeeping, and Golden Visa assistance."
-canonical: https://goldenlegacy.ae/services
+canonical: https://www.goldenlegacy.ae/services
 ---
 
 # Our Services

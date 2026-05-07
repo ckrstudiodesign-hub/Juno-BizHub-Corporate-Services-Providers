@@ -1,7 +1,7 @@
 ---
 title: "Blog — Golden Legacy Insights"
 meta_description: "Insights and guides on company formation, VAT, corporate tax, Golden Visa, and banking in the UAE from Golden Legacy experts."
-canonical: https://goldenlegacy.ae/blog
+canonical: https://www.goldenlegacy.ae/blog
 ---
 
 # Golden Legacy Blog

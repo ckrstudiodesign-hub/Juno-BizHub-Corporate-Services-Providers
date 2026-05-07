@@ -1,7 +1,7 @@
 ---
 title: "Business Setup Dubai & Corporate Services UAE | Golden Legacy"
 meta_description: "Golden Legacy helps founders launch in Dubai with mainland, free zone, offshore, banking, VAT, PRO, and corporate advisory services."
-canonical: https://goldenlegacy.ae/
+canonical: https://www.goldenlegacy.ae/
 ---
 
 # Golden Legacy — Business Setup Dubai & Corporate Services UAE

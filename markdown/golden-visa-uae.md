@@ -1,7 +1,7 @@
 ---
 title: "Golden Visa UAE — Residency & Long-Term Stay Guidance"
 meta_description: "Golden Legacy provides Golden Visa advisory and immigration support for investors, entrepreneurs, and skilled professionals seeking long-term residency in the UAE."
-canonical: https://goldenlegacy.ae/golden-visa-uae
+canonical: https://www.goldenlegacy.ae/golden-visa-uae
 ---
 
 # Golden Visa UAE

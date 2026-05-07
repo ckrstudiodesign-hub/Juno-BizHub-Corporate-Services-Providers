@@ -1,7 +1,7 @@
 ---
 title: "Corporate Tax UAE — Compliance & Advisory"
 meta_description: "Golden Legacy explains UAE corporate tax basics: rates, exemptions, registration, and filing requirements to keep your business compliant."
-canonical: https://goldenlegacy.ae/corporate-tax-uae
+canonical: https://www.goldenlegacy.ae/corporate-tax-uae
 ---
 
 # Corporate Tax in the UAE

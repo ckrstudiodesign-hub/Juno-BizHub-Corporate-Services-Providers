@@ -1,7 +1,7 @@
 ---
 title: "Contact Golden Legacy — Dubai Corporate Services"
 meta_description: "Get in touch with Golden Legacy in Dubai for company formation, banking, VAT, PRO and residency services. Phone +971 55 665 6007."
-canonical: https://goldenlegacy.ae/contact
+canonical: https://www.goldenlegacy.ae/contact
 ---
 
 # Contact Golden Legacy

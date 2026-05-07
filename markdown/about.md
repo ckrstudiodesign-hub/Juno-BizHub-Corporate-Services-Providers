@@ -1,7 +1,7 @@
 ---
 title: "About Golden Legacy — Corporate Setup & Advisory in Dubai"
 meta_description: "Golden Legacy is a Dubai-based corporate service provider specializing in company formation, banking, PRO, taxation, and residency services for entrepreneurs and investors in the UAE."
-canonical: https://goldenlegacy.ae/about-us
+canonical: https://www.goldenlegacy.ae/about-us
 ---
 
 # About Golden Legacy

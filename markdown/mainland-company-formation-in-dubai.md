@@ -1,7 +1,7 @@
 ---
 title: "Mainland Company Formation in Dubai — Golden Legacy"
 meta_description: "Launch your business in the UAE mainland with Golden Legacy: LLC formation, professional licenses, local approvals, and MOA drafting."
-canonical: https://goldenlegacy.ae/mainland-company-formation-in-dubai
+canonical: https://www.goldenlegacy.ae/mainland-company-formation-in-dubai
 ---
 
 # Mainland Company Formation in Dubai

@@ -41,7 +41,7 @@ const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://goldenlegacy.ae";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.goldenlegacy.ae";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://goldenlegacy.ae';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
 
 const orgSchema = {
   '@context': 'https://schema.org',
