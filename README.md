@@ -324,17 +324,52 @@ export default function ServicePage() {
 
 ## 📞 Support & Contact
 
-**CKR Creatives**
-- Design & Development Studio
-- Full Stack Web Development
-- UI/UX Design Services
-- Performance Optimization
+### Golden Legacy Corporate Services Provider LLC
 
-**Golden Legacy Corporate Services**
-- Email: info@goldenlegacycs.ae
-- Phone: [Contact number]
-- Website: [Your domain]
-- Office: [Your location]
+**Office Address**
+```
+M 06, Emgate Building, 214 Sheikh Zayed Road
+Near Business Bay Metro Station
+Dubai, United Arab Emirates
+```
+
+**Contact Information**
+- 📧 Email: info@goldenlegacy.ae
+- 📱 Phone/WhatsApp: +971 55 665 6007
+
+**Services**
+- Business Setup & Registration
+- Free Zone Company Formation
+- Licensing & Compliance
+- Accounting & Bookkeeping
+- Corporate Tax Consultancy
+- Golden Visa Services
+- Bank Account Opening
+- Legal Translation & Document Attestation
+
+---
+
+### CKR Creatives
+
+**Company Name:** CKR Creatives
+
+**Business Type:** AI-Powered Creative & Business Growth Agency
+
+**Website:** https://ckrcreatives.com
+
+**Contact Information**
+- 📧 Email: ckrstudiodesign@gmail.com
+- 📱 Phone: +971 52 104 6611
+- 📍 Location: Dubai, United Arab Emirates
+
+**Services Offered**
+- 🤖 AI Automation
+- 🎨 Creative Media & Design
+- 💼 Digital Transformation
+- 💻 Web Development & Full-Stack Solutions
+- 📈 SEO & Digital Marketing
+- 🚀 Business Growth Solutions
+- 🎭 Corporate Branding & Identity
 
 ---
 
