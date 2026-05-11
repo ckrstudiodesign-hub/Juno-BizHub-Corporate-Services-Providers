@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import { Send, User, Mail, Phone, MessageSquare, Landmark, ChevronDown, CheckCircle2, AlertCircle } from 'lucide-react';
+import { submitToWeb3Forms } from '@/lib/web3forms';
 
 interface ServiceContactFormProps {
   defaultService?: string;
@@ -76,22 +77,32 @@ const ServiceContactForm = ({
     setStatus('sending');
 
     try {
-      const response = await fetch('/api/send-inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) {
+        setValidationError('Form is not configured. Please try again later.');
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 3000);
+        return;
+      }
+
+      const name = nameRef.current?.value || '';
+      const email = emailRef.current?.value || '';
+      const phone = phoneRef.current?.value || '';
+      const msg = messageRef.current?.value || '';
+
+      await submitToWeb3Forms({
+        accessKey,
+        subject: 'New Service Inquiry - Golden Legacy',
+        name,
+        email,
+        phone,
+        message: `New service inquiry.\n\nService: ${service}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${msg}`,
+        extra: {
           formType: 'service-contact',
-          name: nameRef.current?.value || '',
-          email: emailRef.current?.value || '',
-          phone: phoneRef.current?.value || '',
-          service: service,
-          message: messageRef.current?.value || '',
-        }),
+          service,
+        },
       });
 
-      if (response.ok) {
         setStatus('success');
         // Reset form
         if (nameRef.current) nameRef.current.value = '';
@@ -100,15 +111,9 @@ const ServiceContactForm = ({
         if (messageRef.current) messageRef.current.value = '';
         setValidationError('');
         setTimeout(() => setStatus('idle'), 2000);
-      } else {
-        const data = await response.json();
-        setValidationError(data.error || 'Form submission failed');
-        setStatus('error');
-        setTimeout(() => setStatus('idle'), 3000);
-      }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setValidationError('Network error. Please try again.');
+      setValidationError(error instanceof Error ? error.message : 'Network error. Please try again.');
       setStatus('error');
       setTimeout(() => setStatus('idle'), 3000);
     }

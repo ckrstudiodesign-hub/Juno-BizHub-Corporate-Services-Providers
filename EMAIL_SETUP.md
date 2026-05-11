@@ -1,31 +1,21 @@
-# Email Configuration Setup Guide
+# Form Submission Setup Guide (Web3Forms)
 
-All forms are configured to send inquiries directly to **goldenlegacy295@gmail.com** via Gmail SMTP.
+All forms are configured to send inquiries via Web3Forms.
 
-## Active Configuration: Gmail SMTP ⭐
+## Active Configuration: Web3Forms ⭐
 
-This is the current and recommended setup. Form submissions are sent directly from the server using Gmail's SMTP service.
+This is the current and recommended setup. Form submissions are sent directly from the browser to Web3Forms.
 
 ### Setup Steps
 
-1. **Enable 2-Factor Authentication** on goldenlegacy295@gmail.com
-   - Go to https://myaccount.google.com/security
-   - Enable 2-Step Verification
+1. Create a Web3Forms access key in the Web3Forms dashboard
 
-2. **Generate an App Password**
-   - Go to https://myaccount.google.com/apppasswords
-   - Select "Mail" from the first dropdown
-   - Select "Windows Computer" (or your device) from the second dropdown
-   - Click "Generate"
-   - Google will show a 16-character password
-
-3. **Add to `.env.local`**
+2. Add to `.env.local`:
    ```
-   GMAIL_PASSWORD=xxxx xxxx xxxx xxxx
+   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
    ```
-   (Remove spaces from the password)
 
-4. **Restart the dev server**
+3. Restart the dev server:
    ```
    npm run dev
    ```
@@ -34,9 +24,7 @@ This is the current and recommended setup. Form submissions are sent directly fr
 
 1. Fill out any form on the site
 2. Click "Send" or "Get Started"
-3. Check the server terminal (where `npm run dev` is running) for:
-   - ✅ Email sent successfully to goldenlegacy295@gmail.com
-4. Check goldenlegacy295@gmail.com inbox for the submission
+3. Submit the form and confirm the Web3Forms dashboard receives the submission
 
 ## Forms Connected
 
@@ -47,15 +35,10 @@ This is the current and recommended setup. Form submissions are sent directly fr
 
 ## Troubleshooting
 
-- **"GMAIL_PASSWORD not configured"** - Ensure GMAIL_PASSWORD is set in `.env.local`
-- **"Authentication failed"** - Check that:
-  - 2FA is enabled on the Gmail account
-  - App Password is correct (16 characters, no spaces)
-  - Nodemailer package is installed (`npm install nodemailer`)
-- **Submission works but no email received** - Check spam/junk folder
+- **"Form is not configured"** - Ensure `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` is set
+- **"Network error"** - Check browser extensions/ad blockers and try an incognito window
 
 ## Current Status
 
-- ✅ All forms POST to `/api/send-inquiry`
-- ✅ Email sends via Gmail SMTP to goldenlegacy295@gmail.com
-- ✅ Nodemailer installed and configured
+- ✅ All forms submit to Web3Forms
+- ✅ No server-side email configuration required

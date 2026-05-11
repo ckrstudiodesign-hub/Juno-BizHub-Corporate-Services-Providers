@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, User, Mail, Phone, CheckCircle2, AlertCircle } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { submitToWeb3Forms } from '@/lib/web3forms';
 
 export default function LeadModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,20 +73,28 @@ export default function LeadModal() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/send-inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) {
+        setError('Form is not configured. Please try again later.');
+        return;
+      }
+
+      const name = nameRef.current?.value || '';
+      const email = emailRef.current?.value || '';
+      const phone = phoneRef.current?.value || '';
+
+      await submitToWeb3Forms({
+        accessKey,
+        subject: 'New Lead - Golden Legacy (Modal)',
+        name,
+        email,
+        phone,
+        message: `New lead submission.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`,
+        extra: {
           formType: 'lead-modal',
-          name: nameRef.current?.value || '',
-          email: emailRef.current?.value || '',
-          phone: phoneRef.current?.value || '',
-        }),
+        },
       });
 
-      if (response.ok) {
         setIsSuccess(true);
         setTimeout(() => {
           setIsSuccess(false);
@@ -95,13 +104,9 @@ export default function LeadModal() {
           if (emailRef.current) emailRef.current.value = '';
           setError('');
         }, 2000);
-      } else {
-        const data = await response.json();
-        setError(data.error || 'Submission failed');
-      }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setError('Network error. Please try again.');
+      setError(error instanceof Error ? error.message : 'Network error. Please try again.');
     } finally {
       setIsSubmitting(false);
     }

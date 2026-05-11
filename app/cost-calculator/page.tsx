@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { submitToWeb3Forms } from '@/lib/web3forms';
 
 const nationalities = [
   "Afghan", "Albanian", "Algerian", "American", "Andorran", "Angolan", "Antiguans", "Argentinean", "Armenian", "Australian", "Austrian", "Azerbaijani", "Bahamian", "Bahraini", "Bangladeshi", "Barbadian", "Belarusian", "Belgian", "Belizean", "Beninese", "Bhutanese", "Bolivian", "Bosnian", "Brazilian", "British", "Bruneian", "Bulgarian", "Burkinese", "Burundian", "Cambodian", "Cameroonian", "Canadian", "Cape Verdean", "Central African", "Chadian", "Chilean", "Chinese", "Colombian", "Comoran", "Congolese", "Costa Rican", "Croatian", "Cuban", "Cypriot", "Czech", "Danish", "Djibouti", "Dominican", "Dutch", "East Timorese", "Ecuadorean", "Egyptian", "Emirati", "Equatorial Guinean", "Eritrean", "Estonian", "Ethiopian", "Fijian", "Filipino", "Finnish", "French", "Gabonese", "Gambian", "Georgian", "German", "Ghanaian", "Greek", "Grenadian", "Guatemalan", "Guinean", "Guyanese", "Haitian", "Honduran", "Hungarian", "Icelander", "Indian", "Indonesian", "Iranian", "Iraqi", "Irish", "Israeli", "Italian", "Ivorian", "Jamaican", "Japanese", "Jordanian", "Kazakhstani", "Kenyan", "Kittian and Nevisian", "Kuwaiti", "Kyrgyz", "Laotian", "Latvian", "Lebanese", "Liberian", "Libyan", "Liechtensteiner", "Lithuanian", "Luxembourger", "Macedonian", "Malagasy", "Malawian", "Malaysian", "Maldivan", "Malian", "Maltese", "Marshallese", "Mauritanian", "Mauritian", "Mexican", "Micronesian", "Moldovan", "Monacan", "Mongolian", "Moroccan", "Mosotho", "Motswana", "Mozambican", "Namibian", "Nauruan", "Nepalese", "New Zealander", "Ni-Vanuatu", "Nicaraguan", "Nigerian", "North Korean", "Norwegian", "Omani", "Pakistani", "Palauan", "Panamanian", "Papua New Guinean", "Paraguayan", "Peruvian", "Polish", "Portuguese", "Qatari", "Romanian", "Russian", "Rwandan", "Saint Lucian", "Salvadoran", "Samoan", "San Marinese", "Sao Tomean", "Saudi", "Senegalese", "Serbian", "Seychellois", "Sierra Leonean", "Singaporean", "Slovakian", "Slovenian", "Solomon Islander", "Somali", "South African", "South Korean", "Spanish", "Sri Lankan", "Sudanese", "Surinamer", "Swazi", "Swedish", "Swiss", "Syrian", "Taiwanese", "Tajik", "Tanzanian", "Thai", "Togolese", "Tongan", "Trinidadian and Tobagonian", "Tunisian", "Turkish", "Turkmen", "Tuvaluan", "Ugandan", "Ukrainian", "Uruguayan", "Uzbekistani", "Venezuelan", "Vietnamese", "Western Samoan", "Yemeni", "Yugoslav", "Zambian", "Zimbabwean"
@@ -201,37 +202,51 @@ const CostCalculatorPage = () => {
     setSubmissionError('');
     
     try {
-      const response = await fetch('/api/send-inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) {
+        setSubmissionError('Form is not configured. Please try again later.');
+        setIsFinalizing(false);
+        return;
+      }
+
+      const name = `${formData.firstname || ''} ${formData.lastname || ''}`.trim() || 'N/A';
+      const email = formData.email || '';
+      const phone = formData.number || '';
+
+      const summaryLines = [
+        `Business Activity: ${formData.activity || 'N/A'}`,
+        `Setup Reason: ${formData.reason || 'N/A'}`,
+        `Shareholders: ${formData.shareholders ?? 'N/A'}`,
+        `Residence Visas: ${formData.visas ?? 'N/A'}`,
+        `Office Type: ${formData.office || 'N/A'}`,
+        `Timeline: ${formData.timeline || 'N/A'}`,
+        `Jurisdiction: ${formData.jurisdiction || 'N/A'}`,
+        `UAE Resident: ${formData.isUAE || 'N/A'}`,
+        `Dependants: ${formData.dependants || 'N/A'}`,
+        `Nationality: ${formData.nationality || 'N/A'}`,
+      ];
+
+      await submitToWeb3Forms({
+        accessKey,
+        subject: 'New Cost Calculator Inquiry - Golden Legacy',
+        name,
+        email,
+        phone,
+        message: `New cost calculator submission.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${summaryLines.join('\n')}`,
+        extra: {
           formType: 'cost-calculator',
           ...formData,
-        }),
+        },
       });
 
-      if (response.ok) {
-        console.log('Cost calculator submission successful');
-        setIsFinalizing(false);
-        setShowModal(true);
-        setTimeout(() => setShowModal(false), 2000);
-      } else {
-        let errorMessage = 'Failed to submit';
-        try {
-          const data = await response.json();
-          errorMessage = data?.error || errorMessage;
-        } catch {
-          // Keep the default message if the response body is not JSON.
-        }
-        setSubmissionError(errorMessage);
-        setIsFinalizing(false);
-      }
+      console.log('Cost calculator submission successful');
+      setIsFinalizing(false);
+      setShowModal(true);
+      setTimeout(() => setShowModal(false), 2000);
     } catch (error) {
       console.error('Error submitting cost calculator:', error);
       setIsFinalizing(false);
-      setSubmissionError('Network error. Please try again.');
+      setSubmissionError(error instanceof Error ? error.message : 'Network error. Please try again.');
     }
   };
 

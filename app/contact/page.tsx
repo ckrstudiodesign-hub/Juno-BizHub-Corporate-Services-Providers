@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock, Send, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { submitToWeb3Forms } from '@/lib/web3forms';
 
 const ContactPage = () => {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -18,22 +19,32 @@ const ContactPage = () => {
     setSubmitStatus('submitting');
 
     try {
-      const response = await fetch('/api/send-inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) {
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus('idle'), 2000);
+        return;
+      }
+
+      const name = nameRef.current?.value || '';
+      const email = emailRef.current?.value || '';
+      const phone = phoneRef.current?.value || '';
+      const serviceType = serviceRef.current?.value || '';
+      const msg = messageRef.current?.value || '';
+
+      await submitToWeb3Forms({
+        accessKey,
+        subject: 'New Contact Page Inquiry - Golden Legacy',
+        name,
+        email,
+        phone,
+        message: `New contact page inquiry.\n\nService Type: ${serviceType}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${msg}`,
+        extra: {
           formType: 'contact-page',
-          name: nameRef.current?.value || '',
-          email: emailRef.current?.value || '',
-          phone: phoneRef.current?.value || '',
-          serviceType: serviceRef.current?.value || '',
-          message: messageRef.current?.value || '',
-        }),
+          serviceType,
+        },
       });
 
-      if (response.ok) {
         setSubmitStatus('success');
         // Reset form
         if (nameRef.current) nameRef.current.value = '';
@@ -43,10 +54,6 @@ const ContactPage = () => {
         if (messageRef.current) messageRef.current.value = '';
         
         setTimeout(() => setSubmitStatus('idle'), 2000);
-      } else {
-        setSubmitStatus('error');
-        setTimeout(() => setSubmitStatus('idle'), 2000);
-      }
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');

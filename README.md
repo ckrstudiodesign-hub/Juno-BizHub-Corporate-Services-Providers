@@ -9,7 +9,7 @@ Professional corporate website for Golden Legacy Corporate Services - specializi
 ## 🌟 Features
 
 ✨ **Performance Optimized**
-- Static export for lightning-fast load times
+- Pre-rendered pages for fast load times
 - CDN-ready with aggressive caching headers (1-year asset cache)
 - 63 pre-rendered static pages
 - ~160 KB First Load JS (homepage)
@@ -55,10 +55,10 @@ Professional corporate website for Golden Legacy Corporate Services - specializi
 | **Animations** | Framer Motion 10.x |
 | **Icons** | Lucide React 0.x |
 | **Fonts** | Next.js Font Optimization |
-| **Forms** | React + Nodemailer (Gmail SMTP) |
+| **Forms** | React + Web3Forms |
 | **Validation** | validator.js |
 | **Security** | isomorphic-dompurify |
-| **Deployment** | Vercel (static export) |
+| **Deployment** | Vercel |
 
 ---
 
@@ -100,10 +100,17 @@ Visit http://localhost:3000
 npm run build
 ```
 
-### Export Static Site
+### Run Production Server
 ```bash
-npm run build
-# Output: /out directory (ready for Vercel, Netlify, etc.)
+npm run start
+```
+
+### Export Static Site (Optional)
+Static export disables Next.js API routes, so website forms that POST to `/api/send-inquiry` will not work.
+
+```bash
+npm run export:static
+# Output: /out directory (for static hosting)
 ```
 
 ---
@@ -183,18 +190,15 @@ Secondary:        #999999
 
 ---
 
-## 📧 Contact Form Setup
+## 📧 Contact Form Setup (Web3Forms)
 
-To enable the inquiry form email notifications:
+This project submits forms via Web3Forms (no custom email server required).
 
-1. **Create Gmail App Password** (2FA required)
+1. Create a Web3Forms Access Key
 2. Add to `.env.local`:
 ```env
-GMAIL_USER=your-email@gmail.com
-GMAIL_PASSWORD=your-app-specific-password
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
 ```
-
-3. Form submissions will be sent to the configured email via Nodemailer
 
 ---
 
@@ -248,11 +252,10 @@ npm i -g vercel
 vercel --prod
 ```
 
-### Static Export
-The project exports as static HTML (no server needed):
-```bash
-npm run build
-# Upload /out directory to any static host
+### Environment Variables (Forms)
+Configure this in your deployment environment (e.g. Vercel Project Settings):
+```env
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
 ```
 
 ### Deployment Performance

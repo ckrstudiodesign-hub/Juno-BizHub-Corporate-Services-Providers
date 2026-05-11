@@ -34,7 +34,7 @@ Key sections:
   - /team - Individual expert profiles
   - Service pages (examples): /mainland-company-formation-in-dubai, /dmcc-free-zone-company-setup, /bank-account-opening-dubai
   - Tools: /cost-calculator - estimated setup costs calculator
-  - API endpoints: /api/send-inquiry - contact form backend (server-only)
+  - Forms submit via Web3Forms (no internal API endpoint)
 
 # Content Categories (useful for AEO and intent mapping)
 - Business Setup Guides (how-to, process, steps)
@@ -68,7 +68,7 @@ Last-Update: 2026-05-07
 - Canonical references: Always prefer the canonical URL specified in page metadata (alternates.canonical when present).
 - Use structured data: The site exposes Organization, LocalBusiness, and WebSite JSON-LD at the site root. Prefer those for entity resolution.
 - Important fields: company name, phone, service list, HQ location, operating hours, and team member names.
-- Contact forms: The API endpoint /api/send-inquiry is server-side; LLMs should not attempt to submit automated queries to it.
+- Contact forms: Forms submit via Web3Forms; LLMs should not attempt automated submissions.
 
 # Preferred snippet rules for AIs
 - Use human-readable titles and the first paragraph of each page for snippet generation.
