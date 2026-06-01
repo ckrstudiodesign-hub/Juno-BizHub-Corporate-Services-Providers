@@ -36,6 +36,15 @@ export const teamMembers = [
     message: "Navigating the UAE's regulatory landscape requires more than just knowledge; it requires a commitment to the client's vision. My goal is to simplify the complex and provide clear, actionable advice that empowers entrepreneurs to succeed."
   },
   {
+    slug: "zoraver",
+    name: "Mr. Zoraver",
+    role: "Business Consultant",
+    image: "/Golden Legacy - Profile Photos/Zoraver.png",
+    linkedin: "https://www.linkedin.com/in/zoraver-singh-723280268/",
+    bio: "Mr. Zoraver is a Business Consultant focused on helping entrepreneurs turn business ideas into practical, scalable operations in the UAE. He supports clients with market-entry strategy, setup planning, cost-efficient structuring, and clear execution roadmaps that reduce risk and accelerate growth.",
+    message: "Successful consulting is about clarity and action. My role is to simplify complex decisions, align strategy with your goals, and guide you toward sustainable business growth in a competitive market."
+  },
+  {
     slug: "nikita-agarwal",
     name: "Ms Nikita Agarwal",
     role: "Corporate Service Advisor",
@@ -73,14 +82,5 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/prathibha-mathew-6192a0122/",
     bio: "Ms. Prathibha Mathew serves as HR & Admin at GOLDEN LEGACY, working closely with our operations and PRO teams to ensure seamless internal processes. Dedicated to organizational excellence, she manages administrative functions that support our entire team in delivering premium corporate services to our global clients.",
     message: "Efficiency and coordination are the foundation of our success. I am dedicated to ensuring that our internal operations run smoothly so that our experts can focus on what they do best – helping your business thrive."
-  },
-  {
-    slug: "zoraver",
-    name: "Mr. Zoraver",
-    role: "Business Consultant",
-    image: "/Golden Legacy - Profile Photos/Zoraver.png",
-    linkedin: "https://www.linkedin.com/in/zoraver-singh-723280268/",
-    bio: "Mr. Zoraver is a Business Consultant focused on helping entrepreneurs turn business ideas into practical, scalable operations in the UAE. He supports clients with market-entry strategy, setup planning, cost-efficient structuring, and clear execution roadmaps that reduce risk and accelerate growth.",
-    message: "Successful consulting is about clarity and action. My role is to simplify complex decisions, align strategy with your goals, and guide you toward sustainable business growth in a competitive market."
   }
 ];
