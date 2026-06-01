@@ -90,7 +90,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-white font-bold mb-1">Visit Our Office</p>
-                  <p className="text-gray-500 leading-relaxed font-light">Located At The Heart Of Dubai - Sheikh Zayed Road</p>
+                  <p className="text-gray-500 leading-relaxed font-light">Located At The Heart Of Dubai - Sheikh Zayed Road<br/>PO Box 415227</p>
                 </div>
               </div>
 
