@@ -1,79 +1,42 @@
-export const blogPosts = [
+import type { BlogPost } from "@/types/blog";
+import generatedPostsRaw from "@/data/generated-posts.json";
+
+const generatedPosts: BlogPost[] = generatedPostsRaw as BlogPost[];
+
+const staticPosts: BlogPost[] = [
   {
     slug: "guide-to-mainland-company-formation-dubai",
     title: "The Ultimate Guide to Mainland Company Formation in Dubai",
-    excerpt: "Discover the step-by-step process of setting up a mainland company in Dubai. Learn about the benefits, requirements, and how to navigate the legal landscape for a successful business launch.",
+    excerpt:
+      "Discover the step-by-step process of forming a mainland company in Dubai, including costs, legal requirements, licensing, and visa allocations for entrepreneurs and investors.",
     date: "February 10, 2026",
     author: "GOLDEN LEGACY Team",
     image: "/blog/mainland-setup.png",
     category: "Business Setup",
-    content: `
-      <h2>Introduction</h2>
-      <p>Dubai stands as a global business hub, attracting entrepreneurs and investors from all corners of the world. Setting up a mainland company in Dubai offers unparalleled access to the local market and international trade opportunities. In this guide, we walk you through the essential steps to establish your presence in this dynamic economy.</p>
-      
-      <h3>Why Choose a Mainland Setup?</h3>
-      <p>A mainland company allows you to trade freely within the UAE and internationally. Unlike free zone companies, there are no restrictions on where you can operate within the country. This flexibility is crucial for businesses looking to expand their reach and tap into the diverse consumer base of the Emirates.</p>
-      
-      <h3>Key Steps to Formation</h3>
-      <ul>
-        <li><strong>Choose Your Business Activity:</strong> The Department of Economic Development (DED) has a list of over 2,000 activities. Selecting the right one is the foundation of your license.</li>
-        <li><strong>Select a Legal Structure:</strong> Common structures include Limited Liability Company (LLC), Sole Establishment, and Civil Company.</li>
-        <li><strong>Register Your Trade Name:</strong> Your company name must be unique and comply with the UAE's naming conventions.</li>
-        <li><strong>Obtain Initial Approval:</strong> This confirms that the UAE government has no objection to your business establishing itself in the country.</li>
-        <li><strong>Draft the MOA/LSA:</strong> Depending on your legal structure, you'll need a Memorandum of Association (MOA) or a Local Service Agent (LSA) agreement.</li>
-      </ul>
-      
-      <h3>Conclusion</h3>
-      <p>Setting up a mainland company is a strategic move for long-term growth. With the right guidance and understanding of the local regulations, your business can thrive in Dubai's competitive market.</p>
-    `
+    content: `<h2>Introduction</h2><p>Dubai mainland company formation offers businesses unrestricted access to the UAE market. Unlike free zone entities, mainland companies can trade directly with the local market, participate in government tenders, and operate from any commercial location within Dubai.</p><h2>Why Choose Mainland?</h2><p>The UAE government's landmark decision to allow 100% foreign ownership in mainland companies has revolutionized the business landscape. Entrepreneurs no longer need a local sponsor for most business activities, making mainland formation an increasingly popular choice.</p><h2>Step-by-Step Process</h2><h3>1. Choose Your Business Activity</h3><p>Select from over 2,000 business activities registered with the Department of Economic Development (DED). Your activity determines the license type — commercial, professional, or industrial.</p><h3>2. Select Your Legal Structure</h3><p>Common structures include LLC (Limited Liability Company), Sole Establishment, and Civil Company. Each has specific requirements regarding shareholders, capital, and liability.</p><h3>3. Register Your Trade Name</h3><p>Your trade name must comply with UAE naming conventions. Avoid abbreviations, religious references, and names of existing brands.</p><h3>4. Get Initial Approval</h3><p>Submit your application to the DED for initial approval. This confirms your chosen activity is permissible and reserves your trade name.</p><h3>5. Lease Office Space</h3><p>Secure a physical office and register the tenancy contract (Ejari). The office size determines your visa quota allocation.</p><h3>6. Obtain Your License</h3><p>Submit all documents, pay the license fees, and receive your mainland trade license.</p><h2>Costs Overview</h2><p>Mainland company formation costs typically range from AED 35,000 to AED 120,000, depending on the activity, office space, and number of visas required.</p><h2>Conclusion</h2><p>Mainland company formation in Dubai provides maximum operational flexibility. Contact Golden Legacy Corporate Services for expert guidance through every step of the process.</p>`,
   },
   {
     slug: "benefits-of-golden-visa-uae",
     title: "Unlocking the Benefits of the UAE Golden Visa",
-    excerpt: "The UAE Golden Visa offers long-term residency for investors, entrepreneurs, and specialized talents. Explore the eligibility criteria and the exclusive advantages it brings to you and your family.",
+    excerpt:
+      "The UAE Golden Visa offers long-term residency for investors, entrepreneurs, specialized talents, and outstanding students. Learn about eligibility criteria, application process, and benefits.",
     date: "February 5, 2026",
     author: "Legal Team",
     image: "/blog/golden-visa.png",
     category: "Immigration",
-    content: `
-      <h2>What is the Golden Visa?</h2>
-      <p>The UAE Golden Visa is a long-term residence visa which enables foreign talents to live, work or study in the UAE while enjoying exclusive benefits. Investors, entrepreneurs, scientists, outstanding students and graduates, humanitarian pioneers and frontline heroes are among those eligible.</p>
-
-      <h3>Key Benefits</h3>
-      <ul>
-        <li><strong>Long-term Residency:</strong> A renewable residence visa valid for 5 or 10 years.</li>
-        <li><strong>No Sponsor Required:</strong> You do not need a UAE national sponsor.</li>
-        <li><strong>Family Sponsorship:</strong> You can sponsor your family members, including spouse and children regardless of their age.</li>
-        <li><strong>Work Flexibility:</strong> Holders can work for any employer or start their own business.</li>
-      </ul>
-
-      <h3>Eligibility Categories</h3>
-      <p>From real estate investors to exceptional talents in arts and culture, the Golden Visa program is designed to attract and retain global talent. Understanding which category fits your profile is the first step towards securing your future in the UAE.</p>
-    `
+    content: `<h2>What is the Golden Visa?</h2><p>The UAE Golden Visa is a long-term residency visa system that was launched in 2019. It allows foreign nationals to live, work, and study in the UAE without the need for a national sponsor. The visa is available in 5-year and 10-year options, providing exceptional stability for individuals and families.</p><h2>Who Can Apply?</h2><p>The Golden Visa is available to several categories of applicants:</p><ul><li><strong>Investors</strong> — Those with property investments of AED 2 million or more, or public investments of equivalent value</li><li><strong>Entrepreneurs</strong> — Owners of approved startup projects worth at least AED 500,000</li><li><strong>Specialized Talents</strong> — Scientists, engineers, doctors, artists, and other professionals with exceptional abilities</li><li><strong>Outstanding Students</strong> — University graduates with a GPA of 3.75 or above from UAE or internationally ranked universities</li></ul><h2>Key Benefits</h2><p>The Golden Visa offers numerous advantages:</p><ul><li>Long-term residency security (5 or 10 years, renewable)</li><li>Ability to sponsor family members including spouse and children</li><li>No requirement for a national sponsor or employer</li><li>Ability to stay outside the UAE for extended periods without losing residency</li><li>Access to UAE banking, education, and healthcare systems</li></ul><h2>Application Process</h2><p>The Golden Visa application can be submitted through the ICP (Federal Authority for Identity, Citizenship, Customs and Port Security) or through authorized service centers. Required documents typically include passport copies, Emirates ID, proof of investment or qualification, and health insurance.</p><h2>Conclusion</h2><p>The UAE Golden Visa represents a transformative opportunity for investors and professionals seeking long-term residency in one of the world's most dynamic countries. Contact Golden Legacy for assistance with your Golden Visa application.</p>`,
   },
   {
     slug: "corporate-tax-uae-explained",
-    title: "Understanding Corporate Tax in the UAE: What You Need to Know",
-    excerpt: "With the introduction of corporate tax in the UAE, businesses need to stay compliant. This article breaks down the rates, exemptions, and filing requirements to keep your business on the right track.",
+    title: "Understanding Corporate Tax in the UAE",
+    excerpt:
+      "With the introduction of corporate tax in the UAE, businesses need to understand their obligations. Learn about tax rates, exemptions, qualifying free zone benefits, and filing requirements.",
     date: "January 28, 2026",
     author: "Financial Advisory",
     image: "/blog/corporate-tax.png",
     category: "Taxation",
-    content: `
-      <h2>The New Tax Landscape</h2>
-      <p> The UAE has introduced a federal Corporate Tax on business profits, effective for financial years starting on or after June 1, 2023. This move aligns the UAE with global tax standards while maintaining its competitive edge as a business destination.</p>
-
-      <h3>Tax Rates</h3>
-      <ul>
-        <li><strong>0%:</strong> On taxable income up to AED 375,000.</li>
-        <li><strong>9%:</strong> On taxable income exceeding AED 375,000.</li>
-      </ul>
-
-      <h3>Who is Subject to Corporate Tax?</h3>
-      <p>The tax applies to all businesses and individuals conducting business activities under a commercial license in the UAE. However, there are exemptions for government entities, extractive businesses, and certain qualifying public benefit entities.</p>
-
-      <h3>Compliance and Filing</h3>
-      <p>Businesses must register for Corporate Tax and file an annual return. Keeping accurate financial records is more important than ever to ensure compliance and avoid penalties.</p>
-    `
-  }
+    content: `<h2>The New Tax Landscape</h2><p>The UAE introduced federal corporate tax effective from June 1, 2023, marking a significant shift in the country's fiscal policy. The corporate tax applies to all UAE businesses and commercial activities, with some important exemptions and reliefs.</p><h2>Tax Rates</h2><p>The UAE corporate tax structure is designed to be competitive:</p><ul><li><strong>0%</strong> on taxable income up to AED 375,000 — supporting small businesses and startups</li><li><strong>9%</strong> on taxable income exceeding AED 375,000 — one of the lowest rates globally</li><li><strong>0%</strong> for Qualifying Free Zone Persons on qualifying income</li></ul><h2>Who Needs to Register?</h2><p>All entities conducting business in the UAE must register for corporate tax with the Federal Tax Authority (FTA). This includes mainland companies, free zone entities, and foreign entities with a permanent establishment in the UAE.</p><h2>Qualifying Free Zone Persons</h2><p>Free zone companies can benefit from 0% corporate tax on qualifying income if they meet specific criteria, including maintaining adequate substance in the UAE, deriving qualifying income, and complying with transfer pricing regulations.</p><h2>Filing Requirements</h2><p>Companies must file annual corporate tax returns within 9 months of the end of their financial year. Proper bookkeeping, financial statements, and transfer pricing documentation are essential for compliance.</p><h2>Conclusion</h2><p>Understanding and complying with UAE corporate tax is crucial for all businesses operating in the country. Golden Legacy's tax advisory team can help you navigate the corporate tax landscape and optimize your tax position.</p>`,
+  },
 ];
+
+export const blogPosts: BlogPost[] = [...generatedPosts, ...staticPosts];
