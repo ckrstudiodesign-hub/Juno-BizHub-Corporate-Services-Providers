@@ -242,10 +242,10 @@ async function sendWelcomeEmail(email: string) {
 // Commit to GitHub via API
 async function commitToGitHub(subscribers: Subscriber[], email: string): Promise<boolean> {
   const token = process.env.GITHUB_PAT;
-  const repo = process.env.GITHUB_REPO;
+  const repo = process.env.GITHUB_REPO || "goldenlegacy295-create/golden-legacy-corporate-service-website-v2";
 
-  if (!token || !repo) {
-    console.warn("GITHUB_PAT or GITHUB_REPO not configured. Falling back to local storage.");
+  if (!token) {
+    console.warn("GITHUB_PAT not configured. Falling back to local storage.");
     return false;
   }
 
@@ -298,9 +298,9 @@ async function commitToGitHub(subscribers: Subscriber[], email: string): Promise
 // Get subscribers from either GitHub (if configured) or local
 async function getSubscribers(): Promise<{ list: Subscriber[]; sha?: string }> {
   const token = process.env.GITHUB_PAT;
-  const repo = process.env.GITHUB_REPO;
+  const repo = process.env.GITHUB_REPO || "goldenlegacy295-create/golden-legacy-corporate-service-website-v2";
 
-  if (token && repo) {
+  if (token) {
     const url = `https://api.github.com/repos/${repo}/contents/data/subscribers.json`;
     try {
       const res = await fetch(url, {
@@ -365,7 +365,7 @@ export async function POST(request: NextRequest) {
 
     // Try committing to GitHub
     let saved = false;
-    if (process.env.GITHUB_PAT && process.env.GITHUB_REPO) {
+    if (process.env.GITHUB_PAT) {
       saved = await commitToGitHub(updatedSubscribers, email);
     }
 

@@ -31,9 +31,9 @@ function saveLocalSubscribers(subscribers: Subscriber[]) {
 // Get subscribers from either GitHub or local
 async function getSubscribers(): Promise<{ list: Subscriber[]; sha?: string }> {
   const token = process.env.GITHUB_PAT;
-  const repo = process.env.GITHUB_REPO;
+  const repo = process.env.GITHUB_REPO || "goldenlegacy295-create/golden-legacy-corporate-service-website-v2";
 
-  if (token && repo) {
+  if (token) {
     const url = `https://api.github.com/repos/${repo}/contents/data/subscribers.json`;
     try {
       const res = await fetch(url, {
@@ -61,9 +61,9 @@ async function getSubscribers(): Promise<{ list: Subscriber[]; sha?: string }> {
 // Commit to GitHub via API
 async function commitToGitHub(subscribers: Subscriber[], email: string): Promise<boolean> {
   const token = process.env.GITHUB_PAT;
-  const repo = process.env.GITHUB_REPO;
+  const repo = process.env.GITHUB_REPO || "goldenlegacy295-create/golden-legacy-corporate-service-website-v2";
 
-  if (!token || !repo) return false;
+  if (!token) return false;
 
   const url = `https://api.github.com/repos/${repo}/contents/data/subscribers.json`;
   const headers = {
@@ -201,7 +201,7 @@ export async function GET(request: NextRequest) {
       saveLocalSubscribers(updatedSubscribers);
 
       // Commit to GitHub
-      if (process.env.GITHUB_PAT && process.env.GITHUB_REPO) {
+      if (process.env.GITHUB_PAT) {
         await commitToGitHub(updatedSubscribers, email);
       }
     }
