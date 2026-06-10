@@ -4,8 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
+import { Calendar, User, ArrowRight } from 'lucide-react';
 import { blogPosts } from '@/lib/blog-data';
+import NewsletterSubscribe from '@/components/blog/NewsletterSubscribe';
 
 export default function BlogPage() {
   return (
@@ -104,6 +105,9 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      {/* Newsletter Subscribe */}
+      <NewsletterSubscribe />
     </main>
   );
 }

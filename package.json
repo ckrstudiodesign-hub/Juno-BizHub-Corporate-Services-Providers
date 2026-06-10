@@ -8,14 +8,19 @@
     "export:static": "next build && next export"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@tailwindcss/typography": "^0.5.19",
     "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
     "framer-motion": "^12.29.0",
+    "gray-matter": "^4.0.3",
     "isomorphic-dompurify": "^3.12.0",
     "lucide-react": "^0.563.0",
     "next": "^14.2.35",
+    "nodemailer": "^8.0.10",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "reading-time": "^1.5.0",
     "tailwind-merge": "^3.4.0",
     "validator": "^13.15.35"
   },

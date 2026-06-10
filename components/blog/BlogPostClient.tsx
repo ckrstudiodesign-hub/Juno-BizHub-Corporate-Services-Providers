@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, User, Share2, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import NewsletterSubscribe from '@/components/blog/NewsletterSubscribe';
 
 interface BlogPostProps {
   post: {
@@ -100,9 +101,12 @@ export default function BlogPostClient({ post }: BlogPostProps) {
           <div className="prose prose-invert prose-lg prose-headings:font-black prose-headings:text-white prose-p:text-gray-300 prose-a:text-gold prose-strong:text-white prose-li:text-gray-300">
              <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </div>
+
+          {/* Newsletter Subscribe (inline) */}
+          <NewsletterSubscribe variant="inline" />
           
           {/* Post Footer CTA */}
-          <div className="mt-20 p-8 md:p-12 rounded-3xl bg-[#0a0a0a] border border-white/5 text-center space-y-6 relative overflow-hidden">
+          <div className="mt-12 p-8 md:p-12 rounded-3xl bg-[#0a0a0a] border border-white/5 text-center space-y-6 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
             
             <h3 className="text-2xl md:text-3xl font-black text-white">Need Expert Advice?</h3>

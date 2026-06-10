@@ -29,6 +29,8 @@ jobs:
       - name: Generate blog post (also cleans up expired posts)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
         run: node scripts/generate-blog.js
 
       - name: Commit and push changes
