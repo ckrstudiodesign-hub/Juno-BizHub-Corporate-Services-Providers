@@ -21,11 +21,15 @@ function getLocalSubscribers(): Subscriber[] {
 
 // Save subscribers locally
 function saveLocalSubscribers(subscribers: Subscriber[]) {
-  const dir = path.dirname(subscribersPath);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
+  try {
+    const dir = path.dirname(subscribersPath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(subscribersPath, JSON.stringify(subscribers, null, 2));
+  } catch (err) {
+    console.warn("Local subscribers write failed (expected in read-only serverless environments):", err);
   }
-  fs.writeFileSync(subscribersPath, JSON.stringify(subscribers, null, 2));
 }
 
 // Get subscribers from either GitHub or local
