@@ -26,7 +26,6 @@ const FAQ = dynamic(() => import('@/components/home/FAQ'));
 const LocationMap = dynamic(() => import('@/components/home/LocationMap'));
 const Team = dynamic(() => import('@/components/about/Team'));
 const ContactBanner = dynamic(() => import('@/components/home/ContactBanner'));
-const NewsletterSubscribe = dynamic(() => import('@/components/blog/NewsletterSubscribe'));
 
 export default function Home() {
   return (
@@ -41,7 +40,6 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <FAQ />
-      <NewsletterSubscribe />
       <LocationMap />
       <ContactBanner />
     </div>

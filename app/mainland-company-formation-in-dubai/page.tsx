@@ -21,28 +21,46 @@ export default function MainlandOverview() {
         "Ability to diversify your business",
         "Exemption on yearly audit"
       ]}
+      executiveSummary={{
+        summary: "A mainland company in Dubai (often an LLC) is an onshore entity registered with the Department of Economic Development (DED). It allows you to trade freely anywhere in the UAE and internationally without restrictions.",
+        keyFacts: [
+          "Zero Corporate Tax on profits up to AED 375,000",
+          "100% Foreign Ownership allowed in most sectors",
+          "No currency restrictions",
+          "Can bid for government contracts"
+        ]
+      }}
+      decisionTable={{
+        title: "Mainland vs Free Zone",
+        option1Name: "Mainland (DED)",
+        option2Name: "Free Zone",
+        features: [
+          { name: "Trading Scope", option1: "Anywhere in UAE & Global", option2: "Only inside Free Zone & Global" },
+          { name: "Government Contracts", option1: true, option2: false },
+          { name: "Office Requirement", option1: "Physical office mandatory", option2: "Flexi-desk allowed" },
+          { name: "Foreign Ownership", option1: "100% (for most activities)", option2: "100%" }
+        ]
+      }}
+      stepByStep={{
+        title: "Mainland Setup Process",
+        steps: [
+          { title: "Initial Approval", description: "Select your business activity and reserve a trade name with the DED." },
+          { title: "Legal Drafting", description: "Draft the Memorandum of Association (MOA) and Local Service Agent agreement if required." },
+          { title: "Office Lease", description: "Sign a tenancy contract (Ejari) for your physical office space in Dubai." },
+          { title: "Final License", description: "Submit all documents to the DED and obtain your official Trade License." }
+        ]
+      }}
+      faqs={[
+        {
+          question: "Do I need a local sponsor for a Dubai Mainland company?",
+          answer: "Recent legislative changes allow 100% foreign ownership for most commercial and industrial activities. A Local Service Agent (LSA) may only be required for specific professional licenses."
+        },
+        {
+          question: "What is the minimum capital requirement for an LLC?",
+          answer: "There is no statutory minimum share capital requirement for a standard LLC in Dubai Mainland, though it should be sufficient to achieve the purpose of incorporation."
+        }
+      ]}
       sections={[
-        {
-          title: "Dubai Mainland Company Formation Regulations",
-          content: [
-            "A mainland company in Dubai is a type of business registered and operating in the mainland region of Dubai, United Arab Emirates. These companies are under the jurisdiction of the Department of Economic Development (DED) and are governed by the UAE Commercial Companies Law. Mainland companies in Dubai benefit from being able to do business throughout the UAE and access its large customer base and market opportunities.",
-            "However, there may be restrictions, such as the need for a local sponsor and limitations on foreign ownership, to take into consideration."
-          ]
-        },
-        {
-          title: "Business Setup in Dubai Mainland involves several steps",
-          content: "Golden Legacy Team helps you to setup a business in Mainland Dubai at an affordable price. The process typically involves:",
-          list: [
-            "Identifying the Business Activity",
-            "Selecting a Legal Structure (Sole proprietorship, LLC, etc.)",
-            "Securing a Trade License from DED",
-            "Registering with the DED and securing approvals",
-            "Submitting Required Documents (MOA, AOA)",
-            "Renting an Office Space",
-            "Obtaining Visas for owners and employees",
-            "Paying License and Visa Fees"
-          ]
-        },
         {
           title: "Types of Licenses Issued by DED",
           content: "You are free to choose the license that fits your business model:",

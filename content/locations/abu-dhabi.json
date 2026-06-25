@@ -1,0 +1,14 @@
+{
+  "name": "Abu Dhabi",
+  "title": "Business Setup in Abu Dhabi",
+  "description": "Abu Dhabi is the capital of the UAE and a global powerhouse for energy, finance, and technology. Setting up here grants unparalleled access to government contracts and institutional funding.",
+  "heroImage": "/images/dubai-skyline.jpg",
+  "latitude": "24.4539",
+  "longitude": "54.3773",
+  "advantages": [
+    "Direct access to UAE Federal Government and institutional contracts",
+    "World-class Free Zones like ADGM (Abu Dhabi Global Market)",
+    "Thriving sectors in renewable energy, AI, and healthcare",
+    "Exceptional quality of life and business infrastructure"
+  ]
+}

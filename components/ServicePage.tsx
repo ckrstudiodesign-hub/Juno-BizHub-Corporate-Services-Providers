@@ -6,7 +6,10 @@ import { CheckCircle2, ArrowRight, ArrowLeft, Phone } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import ServiceContactForm from './ServiceContactForm';
-
+import ExecutiveSummary from './geo/ExecutiveSummary';
+import DecisionTable from './geo/DecisionTable';
+import StepByStep from './geo/StepByStep';
+import FaqAccordion from './geo/FaqAccordion';
 interface ServicePageProps {
   title: string;
   subtitle?: string;
@@ -24,6 +27,10 @@ interface ServicePageProps {
     description: string;
   }[];
   heroImage?: string;
+  executiveSummary?: { summary: string | string[], keyFacts: string[] };
+  decisionTable?: { title: string, option1Name: string, option2Name: string, features: { name: string, option1: boolean | string, option2: boolean | string }[] };
+  stepByStep?: { title: string, steps: { title: string, description: string }[] };
+  faqs?: { question: string, answer: string }[];
 }
 
 const ServicePage = ({
@@ -35,7 +42,11 @@ const ServicePage = ({
   sections,
   hallmarksTitle = "Our Service Hallmarks",
   hallmarks,
-  heroImage = "/images/mainland.png"
+  heroImage = "/images/mainland.png",
+  executiveSummary,
+  decisionTable,
+  stepByStep,
+  faqs
 }: ServicePageProps) => {
   return (
     <div className="bg-[#030303] text-white min-h-screen pb-32 pt-20">
@@ -100,6 +111,17 @@ const ServicePage = ({
               </div>
             </motion.section>
 
+            {executiveSummary && (
+              <ExecutiveSummary summary={executiveSummary.summary} keyFacts={executiveSummary.keyFacts} />
+            )}
+
+            {decisionTable && (
+              <DecisionTable {...decisionTable} />
+            )}
+
+            {stepByStep && (
+              <StepByStep {...stepByStep} />
+            )}
             {sections && sections.map((section, idx) => (
               <motion.section 
                 key={idx} 
@@ -188,6 +210,10 @@ const ServicePage = ({
                   ))}
                 </div>
               </section>
+            )}
+
+            {faqs && (
+              <FaqAccordion faqs={faqs} />
             )}
           </div>
 

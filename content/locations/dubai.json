@@ -1,0 +1,14 @@
+{
+  "name": "Dubai",
+  "title": "Business Setup in Dubai",
+  "description": "Dubai is the premier commercial hub of the Middle East, offering unmatched infrastructure, a 0% personal tax environment, and strategic global connectivity.",
+  "heroImage": "/images/dubai-skyline.jpg",
+  "latitude": "25.2048",
+  "longitude": "55.2708",
+  "advantages": [
+    "World-class infrastructure and logistics",
+    "Strategic location bridging East and West",
+    "Access to a vast array of Free Zones",
+    "Business-friendly regulations and 100% foreign ownership in most mainland sectors"
+  ]
+}

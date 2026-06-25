@@ -23,14 +23,46 @@ export default function GoldenVisas() {
         "Strategic stability for business owners and long-term investors",
         "Direct access to a world-class lifestyle and business ecosystem"
       ]}
-      sections={[
+      executiveSummary={{
+        summary: "The UAE Golden Visa is a 10-year residency program aimed at investors, entrepreneurs, specialized talents, and researchers. It grants long-term stability without the need for a national sponsor.",
+        keyFacts: [
+          "10-year renewable residency visa",
+          "No local sponsor or employer required",
+          "Can stay outside the UAE for >6 months without visa cancellation",
+          "Sponsor family members (including parents) and unlimited domestic staff"
+        ]
+      }}
+      decisionTable={{
+        title: "Golden Visa Categories & Requirements",
+        option1Name: "Real Estate Investor",
+        option2Name: "Entrepreneur / Startup",
+        features: [
+          { name: "Investment Amount", option1: "Minimum AED 2 Million", option2: "Min AED 500,000 capital or approved project" },
+          { name: "Property Status", option1: "Off-plan or completed (can be mortgaged)", option2: "Approval from an official incubator or Ministry" },
+          { name: "Duration", option1: "10 Years", option2: "10 Years" },
+          { name: "Target Audience", option1: "Property Buyers", option2: "Founders & Innovators" }
+        ]
+      }}
+      stepByStep={{
+        title: "Golden Visa Application Process",
+        steps: [
+          { title: "Eligibility Assessment", description: "Our consultants review your profile, investments, or professional credentials to determine your eligibility category." },
+          { title: "Document Preparation", description: "We gather and legally attest your certificates, property title deeds, or business audits required by the ICA." },
+          { title: "Nomination & Approval", description: "Submit the file for official nomination. Once approved, you receive the preliminary entry permit." },
+          { title: "Medical & Issuance", description: "Complete the VIP medical fitness test and receive your 10-year Emirates ID and Visa stamping." }
+        ]
+      }}
+      faqs={[
         {
-          title: "Why Choose the Golden Visa?",
-          content: [
-            "The Golden Visa offers a level of security that was previously unavailable to expatriates. It represents the UAE's commitment to retaining world-class talent and capital within its borders.",
-            "Choosing Golden Legacy for your application ensures that your profile is presented with technical precision, maximizing approval rates from the Federal Authority for Identity and Citizenship (ICP)."
-          ]
+          question: "Can I get a Golden Visa if I buy a mortgaged property?",
+          answer: "Yes. You can apply for a Golden Visa if you have purchased a property with a mortgage from a local bank, provided that the total value of the property is at least AED 2 Million (or your equity in the property reaches a specific threshold, subject to current DLD regulations)."
         },
+        {
+          question: "Do software engineers or doctors qualify for the Golden Visa?",
+          answer: "Yes, specialized talents including doctors, scientists, creative professionals, and certain highly skilled engineers (like software or AI engineers) can apply based on their educational degrees, salary, and employment contracts."
+        }
+      ]}
+      sections={[
         {
           title: "Strategic Advantage",
           content: "Whether through property investment, public investment, or professional expertise, the Golden Visa provides a prestigious foundation for long-term legacy building in the Middle East.",
@@ -40,10 +72,6 @@ export default function GoldenVisas() {
             "Specialized Talents (Doctors, Researchers, Creatives)",
             "Outstanding Students and University Graduates"
           ]
-        },
-        {
-          title: "Our Streamlined Execution",
-          content: "We manage every phase—from the initial eligibility audit and document attestation to the final medical tests and ID card issuance—providing a concierge-level service that respects your time and professional standing."
         }
       ]}
     />

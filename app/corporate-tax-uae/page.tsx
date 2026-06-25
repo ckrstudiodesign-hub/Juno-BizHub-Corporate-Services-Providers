@@ -23,14 +23,46 @@ export default function CorporateTax() {
         "Compliance monitoring to avoid non-disclosure penalties",
         "Long-term tax planning to protect corporate profitability"
       ]}
-      sections={[
+      executiveSummary={{
+        summary: "The UAE Federal Corporate Tax (CT) regime imposes a 9% standard rate on taxable business income exceeding AED 375,000. It applies to all UAE businesses and commercial activities, except for the extraction of natural resources.",
+        keyFacts: [
+          "9% standard corporate tax rate on income > AED 375,000",
+          "0% rate for taxable income up to AED 375,000 (Small Business Relief available)",
+          "Free Zone entities can benefit from a 0% rate on 'Qualifying Income'",
+          "Mandatory registration for all businesses, even those eligible for 0% tax"
+        ]
+      }}
+      decisionTable={{
+        title: "Mainland vs Free Zone Tax Impact",
+        option1Name: "Mainland Entity",
+        option2Name: "Qualifying Free Zone",
+        features: [
+          { name: "Standard Tax Rate", option1: "9% (above AED 375k)", option2: "0% on Qualifying Income" },
+          { name: "Registration Required", option1: true, option2: true },
+          { name: "Audited Financials", option1: "Required if revenue > AED 50M", option2: "Mandatory for 0% rate" },
+          { name: "Transfer Pricing Rules", option1: "Applicable", option2: "Applicable" }
+        ]
+      }}
+      stepByStep={{
+        title: "Your Corporate Tax Journey",
+        steps: [
+          { title: "Impact Assessment", description: "Evaluate how the CT law affects your specific corporate structure and revenue streams." },
+          { title: "FTA Registration", description: "Register your business with the Federal Tax Authority (FTA) and obtain a Tax Registration Number (TRN)." },
+          { title: "Accounting Alignment", description: "Upgrade your bookkeeping to ensure compliance with International Financial Reporting Standards (IFRS)." },
+          { title: "Tax Filing", description: "Submit your annual Corporate Tax return and pay any applicable liabilities within 9 months of the financial year-end." }
+        ]
+      }}
+      faqs={[
         {
-          title: "Why Choose Our CT Advisory?",
-          content: [
-            "The Corporate Tax law introduces a new layer of complexity to UAE business operations. We provide the technical depth required to ensure your bookkeeping meets the 'Audited Financial Statement' standards required for CT compliance.",
-            "Choosing Golden Legacy ensures that your business transitions seamlessly into this new regulatory era without operational disruption."
-          ]
+          question: "Do Free Zone companies have to pay Corporate Tax?",
+          answer: "Free Zone companies must register for Corporate Tax. However, they may benefit from a 0% tax rate strictly on 'Qualifying Income' if they meet substance requirements and maintain audited financial statements."
         },
+        {
+          question: "What is Small Business Relief?",
+          answer: "Businesses with revenue below AED 3 million in a relevant tax period may elect to be treated as having no taxable income, effectively paying zero Corporate Tax until the end of 2026."
+        }
+      ]}
+      sections={[
         {
           title: "Strategic Advantage",
           content: "Businesses that proactively structure their operations for Corporate Tax gain a competitive edge by minimizing tax leakages and maximizing legally available reliefs.",
@@ -40,10 +72,6 @@ export default function CorporateTax() {
             "Advice on foreign tax credit utilization",
             "Restructuring for tax-efficient group operations"
           ]
-        },
-        {
-          title: "The Road to Compliance",
-          content: "We manage the entire CT journey—from initial impact assessment and gap analysis to the final filing of the tax return—ensuring your legacy remains compliant and sound."
         }
       ]}
     />

@@ -16,7 +16,7 @@ import SocialSidebar from "@/components/SocialSidebar";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import LeadModal from "@/components/LeadModal";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import SeoSchemas from "@/components/SeoSchemas";
+import SchemaMarkup, { GlobalSchemas } from "@/components/seo/SchemaMarkup";
 import Analytics from "@/components/Analytics";
 import DisableLegacyServiceWorker from "@/components/DisableLegacyServiceWorker";
 import type { Metadata } from "next";
@@ -43,73 +43,9 @@ const robotoCondensed = Roboto_Condensed({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.goldenlegacy.ae";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: {
-    default: "Golden Legacy | Business Setup Dubai & Corporate Services UAE",
-    template: "%s | Golden Legacy",
-  },
-  description:
-    "Golden Legacy helps founders launch in Dubai with mainland, free zone, offshore, banking, VAT, PRO, and advisory services.",
-  keywords: [
-    "Business setup Dubai",
-    "Corporate services UAE",
-    "Mainland company formation",
-    "Free zone company setup",
-    "Offshore company formation",
-    "Dubai business consultant",
-  ],
-  authors: [{ name: "Golden Legacy" }],
-  creator: "Golden Legacy",
-  publisher: "Golden Legacy",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_AE",
-    url: "/",
-    siteName: "Golden Legacy",
-    title: "Golden Legacy | Business Setup Dubai & Corporate Services UAE",
-    description:
-      "Business setup Dubai and corporate services UAE for mainland, free zone, offshore, banking, VAT, and PRO support.",
-    images: [
-      {
-        url: "/golden-logo.png",
-        width: 512,
-        height: 512,
-        alt: "Golden Legacy corporate services provider",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Golden Legacy | Business Setup Dubai & Corporate Services UAE",
-    description:
-      "Dubai business setup, corporate services UAE, and banking support for ambitious founders.",
-    images: ["/golden-logo.png"],
-  },
-  verification: {
-    google: "VTKU994T1ZGZJd8ZATmJuKsyvuc4UoL6Yx4IRAPiz8I",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  icons: {
-    icon: "/golden-logo.png",
-    shortcut: "/golden-logo.png",
-    apple: "/golden-logo.png",
-  },
-};
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata();
 
 export default function RootLayout({
   children,
@@ -121,7 +57,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${robotoSlab.variable} ${robotoCondensed.variable} font-sans antialiased bg-background text-foreground`}>
         <Analytics />
         <DisableLegacyServiceWorker />
-        <SeoSchemas />
+        <SchemaMarkup type="Organization" data={GlobalSchemas.Organization} />
+        <SchemaMarkup type="ProfessionalService" data={GlobalSchemas.LocalBusiness} />
+        <SchemaMarkup type="WebSite" data={GlobalSchemas.WebSite} />
         <Navbar />
         <SocialSidebar />
         <MobileBottomNav />
