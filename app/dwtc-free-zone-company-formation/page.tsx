@@ -9,7 +9,7 @@ export default function DWTCSetup() {
       description={[
         "The Dubai World Trade Centre (DWTC) Authority Free Zone is a premier business destination located in the heart of Dubai's central business district. Established in 1979, the iconic DWTC tower has been a symbol of Dubai's economic rise and today serves as a cosmopolitan hub that connects international trade, exhibitions, and corporate excellence. Spanning over 1.3 million square feet of event and commercial space, it is one of the most prestigious addresses a business can have in the region.",
         "The DWTC Authority Free Zone bietet an attractive and flexible ecosystem for businesses, allowing them to operate under a unique regulatory framework within the city's commercial core. Situated near the Dubai International Financial Centre (DIFC) and just minutes away from the Burj Khalifa, the zone provides unparalleled global networking opportunities and access to world-class events, conferences, and exhibitions throughout the year.",
-        "Golden Legacy provides specialized consultancy for DWTC Authority setup, ensuring your business leverages its world-class infrastructure and prime location to maximize brand prestige and operational growth across global markets."
+        "Juno BizHub provides specialized consultancy for DWTC Authority setup, ensuring your business leverages its world-class infrastructure and prime location to maximize brand prestige and operational growth across global markets."
       ]}
       advantages={[
         "100% foreign ownership and full capital/profit repatriation",
@@ -40,7 +40,7 @@ export default function DWTCSetup() {
         },
         {
           title: "Premier Advisory Services",
-          content: "At Golden Legacy, we manage the entire DWTC licensing lifecycle—from the initial 'Application of Interest' to the final issuance of the trade license. We ensure that your business activities are correctly categorized to meet the DWTC Authority's standards, facilitating smooth corporate banking and providing a prestigious foundation for your global enterprise."
+          content: "At Juno BizHub, we manage the entire DWTC licensing lifecycle—from the initial 'Application of Interest' to the final issuance of the trade license. We ensure that your business activities are correctly categorized to meet the DWTC Authority's standards, facilitating smooth corporate banking and providing a prestigious foundation for your global enterprise."
         }
       ]}
     />

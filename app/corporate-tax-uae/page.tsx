@@ -8,7 +8,7 @@ export default function CorporateTax() {
       heroImage="/images/mainland.png"
       description={[
         "The UAE has introduced a federal Corporate Tax (CT) regime to further solidify its position as a transparent and competitive global business hub. Starting from June 2023, businesses are required to understand their obligations under the new law, which applies a competitive 9% rate on taxable income above AED 375,000.",
-        "Golden Legacy provides specialized Corporate Tax advisory to help you understand how this new regime impacts your specific business structure—whether you are a Mainland entity, a Free Zone company, or a multinational group. We ensure you are registered, compliant, and positioned for maximum tax efficiency.",
+        "Juno BizHub provides specialized Corporate Tax advisory to help you understand how this new regime impacts your specific business structure—whether you are a Mainland entity, a Free Zone company, or a multinational group. We ensure you are registered, compliant, and positioned for maximum tax efficiency.",
         "Our experts guide you through the complexities of 'Qualifying Income' for Free Zone companies and help you architect your inter-company transactions in alignment with Transfer Pricing regulations."
       ]}
       advantages={[

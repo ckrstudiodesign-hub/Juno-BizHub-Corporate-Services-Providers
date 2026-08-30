@@ -9,7 +9,7 @@ export default function IFZASetup() {
       description={[
         "The International Free Zone Authority (IFZA) has rapidly emerged as one of the most dynamic and fastest-growing business hubs in the UAE. Strategically headquartered in Dubai, IFZA offers a highly competitive and flexible platform for international investors, SMEs, and large corporations. Through its partnership with the Dubai Silicon Oasis Authority, IFZA provides a world-class regulatory environment that simplifies the path to entrepreneurship.",
         "IFZA is renowned for its vast array of over 1,000 business activities, ranging from professional consultancy and commercial trading to specialized industrial sectors. This diversity allows entrepreneurs to bundle multiple activities under a single license, providing unmatched versatility in business operations.",
-        "At Golden Legacy, we specialize in navigating the IFZA ecosystem, ensuring that your company formation is not only fast but also structurally optimized for long-term growth and seamless corporate banking integration."
+        "At Juno BizHub, we specialize in navigating the IFZA ecosystem, ensuring that your company formation is not only fast but also structurally optimized for long-term growth and seamless corporate banking integration."
       ]}
       advantages={[
         "100% Foreign Ownership and full management control",

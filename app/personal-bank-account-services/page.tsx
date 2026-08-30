@@ -7,7 +7,7 @@ export default function PersonalBankAccountServices() {
       subtitle="Exclusive Banking for High Net Worth Individuals"
       heroImage="/images/consultant.png"
       description={[
-        "Dubai has emerged as a global wealth hub, offering premier banking services for residents and international investors. At Golden Legacy, we provide bespoke assistance for opening personal bank accounts, catering to high-net-worth individuals who require discretion, efficiency, and access to premium financial products.",
+        "Dubai has emerged as a global wealth hub, offering premier banking services for residents and international investors. At Juno BizHub, we provide bespoke assistance for opening personal bank accounts, catering to high-net-worth individuals who require discretion, efficiency, and access to premium financial products.",
         "Whether you are a resident looking for seamless everyday banking or a non-resident investor seeking wealth preservation strategies, our team facilitates direct introductions to priority banking divisions.",
         "We handle the intricate documentation process, ensuring compliance with UAE banking regulations while securing you access to multi-currency accounts, wealth management services, and exclusive credit facilities."
       ]}

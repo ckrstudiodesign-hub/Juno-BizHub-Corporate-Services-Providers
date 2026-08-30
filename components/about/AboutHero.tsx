@@ -10,7 +10,7 @@ const AboutHero = () => {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/office.png"
-          alt="Golden Legacy Office"
+          alt="Juno BizHub Office"
           fill
           className="object-cover opacity-40 scale-105"
           priority
@@ -25,7 +25,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            Our <span className="text-gradient-gold">Golden</span> Legacy
+            Our <span className="text-gradient-primary">Journey</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
             Founded on two decades of elite banking expertise, navigating the corporate landscape of Dubai with precision and prestige.

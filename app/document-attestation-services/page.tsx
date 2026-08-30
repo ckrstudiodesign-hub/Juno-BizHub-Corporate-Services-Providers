@@ -7,7 +7,7 @@ export default function DocumentAttestation() {
       subtitle="Universal Document Recognition & Validation"
       heroImage="/images/mainland.png"
       description={[
-        "Whether you are processing a visa, opening a bank account, or establishing a corporate branch, your international documents must be legally validated by the UAE authorities. Golden Legacy provides a comprehensive, stress-free Document Attestation service to make your paperwork executable within the UAE.",
+        "Whether you are processing a visa, opening a bank account, or establishing a corporate branch, your international documents must be legally validated by the UAE authorities. Juno BizHub provides a comprehensive, stress-free Document Attestation service to make your paperwork executable within the UAE.",
         "We handle the complex lifecycle of legalization for educational certificates, marriage licenses, birth certificates, and commercial documents. Our global network allows us to manage attestations from the country of origin up to the Ministry of Foreign Affairs (MOFA) in the UAE.",
         "With our concierge approach, we take the administrative burden off your shoulders, ensuring all documents are correctly notarized and stamped by the respective embassies and ministries."
       ]}
@@ -28,7 +28,7 @@ export default function DocumentAttestation() {
           title: "Why Is Attestation Required?",
           content: [
             "UAE law requires that any foreign-issued document be authenticated to verify its genuineness before it is accepted by government departments.",
-            "Choosing Golden Legacy ensures your documents are handled by professionals who understand the specific requirements of the Ministry of Education, Ministry of Justice, and Dubai Health Authority."
+            "Choosing Juno BizHub ensures your documents are handled by professionals who understand the specific requirements of the Ministry of Education, Ministry of Justice, and Dubai Health Authority."
           ]
         },
         {

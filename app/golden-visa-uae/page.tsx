@@ -8,7 +8,7 @@ export default function GoldenVisas() {
       heroImage="/images/mainland.png"
       description={[
         "The UAE Golden Visa is a revolutionary long-term residence permit designed to attract international investors, entrepreneurs, and highly talented professionals. This 10-year residency program offers unprecedented stability, allowing holders to live, work, and study in the UAE without the need for a national sponsor.",
-        "Golden Legacy provides specialized consultancy to determine your eligibility and streamline the application process. We handle the documentation for real estate investors, business owners, and specialized talents, ensuring a rapid transition to 'Golden' status.",
+        "Juno BizHub provides specialized consultancy to determine your eligibility and streamline the application process. We handle the documentation for real estate investors, business owners, and specialized talents, ensuring a rapid transition to 'Golden' status.",
         "With a Golden Visa, you gain the freedom to stay outside the UAE for as long as needed without losing residency status, alongside the ability to sponsor your family and domestic staff under a long-term, secure framework."
       ]}
       advantages={[
@@ -65,7 +65,7 @@ export default function GoldenVisas() {
       sections={[
         {
           title: "Strategic Advantage",
-          content: "Whether through property investment, public investment, or professional expertise, the Golden Visa provides a prestigious foundation for long-term legacy building in the Middle East.",
+          content: "Whether through property investment, public investment, or professional expertise, the Golden Visa provides a prestigious foundation for long-term wealth building in the Middle East.",
           list: [
             "Real Estate Investment (AED 2M+)",
             "Entrepreneurial / Business Ownership path",

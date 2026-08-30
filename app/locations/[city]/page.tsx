@@ -43,14 +43,14 @@ export default function LocationPage({ params }: { params: { city: string } }) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
 
   const localBusinessSchema = {
     '@type': 'ProfessionalService',
-    name: `Golden Legacy Corporate Services - ${location.name}`,
+    name: `Juno BizHub Corporate Services Providers - ${location.name}`,
     image: `${siteUrl}/golden-logo.png`,
     url: `${siteUrl}/locations/${params.city}`,
-    telephone: '+971556656007',
+    telephone: '+971 54 129 0038',
     address: {
       '@type': 'PostalAddress',
       addressLocality: location.name,

@@ -24,11 +24,11 @@ export default function NewsletterSubscribe() {
     "@type": "SubscribeAction",
     "object": {
       "@type": "Organization",
-      "name": "Golden Legacy Corporate Services"
+      "name": "Juno BizHub Corporate Services Providers"
     },
     "result": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.goldenlegacy.ae/blog"
+      "urlTemplate": "https://www.junobizhub.com/blog"
     }
   };
 
@@ -36,12 +36,12 @@ export default function NewsletterSubscribe() {
     <>
       <SchemaMarkup type="SubscribeAction" data={subscribeSchema} />
       <div className="relative bg-gradient-to-br from-[#111111] to-[#050505] rounded-[40px] p-8 md:p-12 border border-white/5 overflow-hidden group shadow-2xl">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-[100px] rounded-full pointer-events-none transition-transform duration-700 group-hover:scale-150"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-electric-sapphire/5 blur-[100px] rounded-full pointer-events-none transition-transform duration-700 group-hover:scale-150"></div>
         
         <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center lg:text-left">
             <h3 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter leading-tight">
-              Stay Ahead with Our <span className="text-gold">Weekly Briefing</span>
+              Stay Ahead with Our <span className="text-electric-sapphire">Weekly Briefing</span>
             </h3>
             <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
               Subscribe to our exclusive newsletter to receive premium weekly insights directly to your inbox. We cover actionable strategies across Corporate Tax, Mainland & Free Zone structuring, UAE Visas, and advanced optimization tactics including SEO, AEO, GEO, LLM, and RAG intelligence.
@@ -61,11 +61,11 @@ export default function NewsletterSubscribe() {
           <div className="bg-black/50 p-6 md:p-8 rounded-[32px] border border-white/5 backdrop-blur-md">
             {status === 'success' ? (
               <div className="flex flex-col items-center justify-center h-full text-center space-y-4 py-8">
-                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center">
-                  <CheckCircle2 className="w-8 h-8 text-gold" />
+                <div className="w-16 h-16 bg-electric-sapphire/10 rounded-full flex items-center justify-center">
+                  <CheckCircle2 className="w-8 h-8 text-electric-sapphire" />
                 </div>
                 <h4 className="text-xl font-bold text-white uppercase">Subscription Confirmed</h4>
-                <p className="text-gray-400 text-sm">Welcome to the Golden Legacy executive briefing.</p>
+                <p className="text-gray-400 text-sm">Welcome to the Juno BizHub executive briefing.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -83,7 +83,7 @@ export default function NewsletterSubscribe() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-14 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-electric-sapphire/50 focus:bg-white/10 transition-all"
                       placeholder="executive@company.com"
                     />
                   </div>
@@ -92,7 +92,7 @@ export default function NewsletterSubscribe() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="w-full bg-gold hover:bg-white text-black font-black uppercase tracking-widest text-xs py-4 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group/btn"
+                  className="w-full bg-electric-sapphire hover:bg-white text-black font-black uppercase tracking-widest text-xs py-4 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group/btn"
                 >
                   {status === 'loading' ? 'Processing...' : 'Subscribe Now'}
                   {status !== 'loading' && <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />}

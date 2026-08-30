@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export const revalidate = 3600;
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
 
 export async function GET() {
   const posts = getAllPosts();
@@ -11,7 +11,7 @@ export async function GET() {
   const feed = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Golden Legacy Business Insights</title>
+    <title>Juno BizHub Business Insights</title>
     <link>${SITE_URL}</link>
     <description>Expert analysis, regulatory updates, and step-by-step guides for navigating the UAE corporate landscape.</description>
     <language>en-ae</language>

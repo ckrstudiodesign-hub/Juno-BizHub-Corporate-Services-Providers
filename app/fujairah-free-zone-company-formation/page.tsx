@@ -9,7 +9,7 @@ export default function FujairahSetup() {
       description={[
         "The Fujairah Free Zone (FFZ) is uniquely positioned on the Eastern seaboard of the UAE, offering a strategic gateway with direct access to the Indian Ocean. While most UAE free zones provide access to the Arabian Gulf, FFZ provides a specialized logistical advantage for companies involved in international shipping, manufacturing, and oil-related industries that require direct sea-to-ocean connectivity.",
         "Established to provide a competitive and business-friendly environment, Fujairah Free Zone is renowned for its speed, efficiency, and cost-effective setup packages. It offers a wide array of licensable activities and provides customized office and warehousing solutions to accommodate everyone from individual consultants to large-scale industrial firms.",
-        "Golden Legacy facilitates a seamless entry into the Fujairah market, leveraging the zone's triple-play connectivity (Air, Sea, and Land) to ensure your business is positioned for growth across the Middle East, Asia, and Africa."
+        "Juno BizHub facilitates a seamless entry into the Fujairah market, leveraging the zone's triple-play connectivity (Air, Sea, and Land) to ensure your business is positioned for growth across the Middle East, Asia, and Africa."
       ]}
       advantages={[
         "100% foreign ownership and full capital/profit repatriation",
@@ -39,7 +39,7 @@ export default function FujairahSetup() {
           content: "Fujairah is home to one of the world's largest bunkering and oil storage hubs. Businesses in the energy, engineering, and manufacturing sectors can benefit from this proximity, utilizing specialized industrial plots and modular warehouses designed for high-capacity production."
         },
         {
-          title: "The Golden Legacy Advantage",
+          title: "The Juno BizHub Advantage",
           content: "Establishing your company in Fujairah is made easy through our dedicated consultants. We handle the entire documentation cycle—from name reservation and legal drafting to business license issuance and establishment card activation—ensuring your setup is structurally sound and ready for corporate banking integration."
         }
       ]}

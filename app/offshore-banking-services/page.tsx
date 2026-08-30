@@ -7,7 +7,7 @@ export default function OffshoreBankingServices() {
       subtitle="Secure International Financial Solutions"
       heroImage="/images/offshore.png"
       description={[
-        "Offshore banking in the UAE offers a strategic advantage for международный businesses and investors seeking asset protection, tax efficiency, and financial privacy. Golden Legacy specializes in navigating the specific requirements of offshore jurisdictions.",
+        "Offshore banking in the UAE offers a strategic advantage for международный businesses and investors seeking asset protection, tax efficiency, and financial privacy. Juno BizHub specializes in navigating the specific requirements of offshore jurisdictions.",
         "We assist in setting up corporate bank accounts for offshore entities, providing a gateway to global markets while operating within a stable and regulated financial environment.",
         "Our expertise ensures that your offshore structure is fully compliant with economic substance regulations, facilitating smoother banking relationships and reducing the risk of account closures."
       ]}

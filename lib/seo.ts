@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
 
 interface ConstructMetadataProps {
   title?: string;
@@ -18,8 +18,8 @@ interface ConstructMetadataProps {
  * Ensures consistent Open Graph, Twitter Cards, and indexing rules.
  */
 export function constructMetadata({
-  title = 'Golden Legacy | Business Setup Dubai & Corporate Services UAE',
-  description = 'Golden Legacy helps founders launch in Dubai with mainland, free zone, offshore, banking, VAT, PRO, and corporate advisory services.',
+  title = 'Juno BizHub | Business Setup Dubai & Corporate Services UAE',
+  description = 'Juno BizHub helps founders launch in Dubai with mainland, free zone, offshore, banking, VAT, PRO, and corporate advisory services.',
   image = '/golden-logo.png',
   noIndex = false,
   canonicalUrl = '/',
@@ -43,13 +43,13 @@ export function constructMetadata({
   return {
     title: {
       default: title,
-      template: '%s | Golden Legacy',
+      template: '%s | Juno BizHub',
     },
     description,
     keywords,
-    authors: [{ name: 'Golden Legacy' }],
-    creator: 'Golden Legacy',
-    publisher: 'Golden Legacy',
+    authors: [{ name: 'Juno BizHub' }],
+    creator: 'Juno BizHub',
+    publisher: 'Juno BizHub',
     alternates: {
       canonical: fullUrl,
     },
@@ -68,7 +68,7 @@ export function constructMetadata({
       type: type as any,
       locale: 'en_AE',
       url: fullUrl,
-      siteName: 'Golden Legacy',
+      siteName: 'Juno BizHub',
       title,
       description,
       images: [

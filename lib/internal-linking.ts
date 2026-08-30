@@ -25,7 +25,7 @@ export function injectInternalLinks(htmlContent: string): string {
     const regex = new RegExp(`\\b(${entity})\\b(?![^<]*>|[^<>]*<\/a>)`, 'i');
     
     // Inject anchor tag with specific CSS classes for styling
-    processedHtml = processedHtml.replace(regex, `<a href="${url}" class="text-gold font-bold hover:underline" title="Learn more about $1">$1</a>`);
+    processedHtml = processedHtml.replace(regex, `<a href="${url}" class="text-electric-sapphire font-bold hover:underline" title="Learn more about $1">$1</a>`);
   }
 
   return processedHtml;

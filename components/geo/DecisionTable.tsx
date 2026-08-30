@@ -23,7 +23,7 @@ export default function DecisionTable({ title, option1Name, option2Name, feature
   return (
     <section className="mb-12" aria-label={title}>
       <div className="flex items-center gap-4 mb-8">
-        <div className="w-8 h-px bg-gold"></div>
+        <div className="w-8 h-px bg-electric-sapphire"></div>
         <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight m-0">{title}</h2>
       </div>
 
@@ -32,7 +32,7 @@ export default function DecisionTable({ title, option1Name, option2Name, feature
           <thead>
             <tr>
               <th className="p-4 border-b border-white/10 text-gray-400 font-bold uppercase tracking-wider text-sm w-1/3">Feature</th>
-              <th className="p-4 border-b border-white/10 text-gold font-black uppercase tracking-wider text-sm w-1/3 bg-gold/5 rounded-tl-xl">{option1Name}</th>
+              <th className="p-4 border-b border-white/10 text-electric-sapphire font-black uppercase tracking-wider text-sm w-1/3 bg-electric-sapphire/5 rounded-tl-xl">{option1Name}</th>
               <th className="p-4 border-b border-white/10 text-white font-black uppercase tracking-wider text-sm w-1/3 bg-white/5 rounded-tr-xl">{option2Name}</th>
             </tr>
           </thead>
@@ -43,9 +43,9 @@ export default function DecisionTable({ title, option1Name, option2Name, feature
                   {feature.name}
                 </td>
                 
-                <td className="p-4 border-b border-white/5 bg-gold/5 group-hover:bg-gold/10 transition-colors">
+                <td className="p-4 border-b border-white/5 bg-electric-sapphire/5 group-hover:bg-electric-sapphire/10 transition-colors">
                   {typeof feature.option1 === 'boolean' ? (
-                    feature.option1 ? <CheckCircle2 className="text-gold w-5 h-5" /> : <XCircle className="text-red-500/50 w-5 h-5" />
+                    feature.option1 ? <CheckCircle2 className="text-electric-sapphire w-5 h-5" /> : <XCircle className="text-red-500/50 w-5 h-5" />
                   ) : (
                     <span className="text-gray-300 text-sm">{feature.option1}</span>
                   )}

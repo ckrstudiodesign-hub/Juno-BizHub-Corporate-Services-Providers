@@ -1,12 +1,12 @@
 ---
-title: "Services — Golden Legacy Corporate Services"
+title: "Services — Juno BizHub Corporate Services Providers"
 meta_description: "Tailored corporate solutions in the UAE: mainland & free zone company formation, bank account opening, VAT & corporate tax consultancy, PRO services, bookkeeping, and Golden Visa assistance."
-canonical: https://www.goldenlegacy.ae/services
+canonical: https://www.junobizhub.com/services
 ---
 
 # Our Services
 
-Golden Legacy provides the following service categories with deep expertise across the UAE market:
+Juno BizHub provides the following service categories with deep expertise across the UAE market:
 
 ## Mainland Formation
 - Launch your business in UAE mainland with a local license.

@@ -10,12 +10,9 @@ interface TeamMember {
   slug: string;
   name: string;
   role: string;
-  image: string;
-  bio: string;
-  message: string;
-  expertise?: string;
-  profession?: string;
-  experience?: string;
+  image?: string;
+  mobile?: string;
+  email?: string;
 }
 
 const TeamMemberClient = ({ member }: { member: TeamMember }) => {
@@ -23,7 +20,7 @@ const TeamMemberClient = ({ member }: { member: TeamMember }) => {
     <main className="min-h-screen bg-background text-white relative overflow-hidden font-serif">
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-[50%] h-full bg-[#0a0a0a] -skew-x-12 translate-x-32 z-0 hidden lg:block"></div>
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-gold/5 blur-[120px] rounded-full -ml-48 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-electric-sapphire/5 blur-[120px] rounded-full -ml-48 pointer-events-none"></div>
       
       {/* Navigation */}
       <nav className="absolute top-32 left-10 z-20">
@@ -45,51 +42,32 @@ const TeamMemberClient = ({ member }: { member: TeamMember }) => {
             transition={{ duration: 0.8 }}
             className="space-y-12 order-2 lg:order-1"
           >
-            {/* <div className="space-y-4">
-              <span className="text-gold text-xs font-black tracking-[0.3em] uppercase block">
-                {member.role === 'CEO' ? "CEO'S MESSAGE" : "TEAM PROFILE"}
-              </span>
-              <div className="w-20 h-[1px] bg-white/20"></div>
-            </div> */}
-
-
 
             <div className="space-y-4">
               <div className="w-12 h-[3px] bg-red-600"></div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-black tracking-tight">{member.name}</h1>
-                <p className="text-white/60 uppercase tracking-[0.2em] text-sm mt-2 font-bold">{member.role}</p>
+                <p className="text-white/60 tracking-wider text-sm mt-2 font-bold">{member.role}</p>
               </div>
             </div>
             
-            {member.experience && (
-              <div className="pt-4 flex items-center gap-4">
-                <div className="w-8 h-[1px] bg-gold/30"></div>
-                <div className="uppercase tracking-widest text-[10px] text-white/40 font-bold">
-                  {member.experience} Experience
+            <div className="pt-8 space-y-6 border-t border-white/10">
+              {member.email && (
+                <div>
+                  <h3 className="uppercase tracking-widest text-[10px] text-white/40 font-bold mb-1">Email</h3>
+                  <a href={`mailto:${member.email}`} className="text-electric-sapphire hover:text-white transition-colors">
+                    {member.email}
+                  </a>
                 </div>
-              </div>
-            )}
-
-            {(member.expertise || member.profession) && (
-              <div className="pt-8 space-y-2 border-t border-white/10">
-                {member.expertise && (
-                  <div className="uppercase tracking-widest text-[10px] text-white/60 font-black">
-                    {member.expertise}
-                  </div>
-                )}
-                {member.profession && (
-                  <div className="uppercase tracking-widest text-[10px] text-gold font-black">
-                    {member.profession}
-                  </div>
-                )}
-              </div>
-            )}
-            
-            <div className="pt-8 border-t border-white/10">
-              <p className="text-white/70 leading-relaxed font-light text-sm md:text-base whitespace-pre-line">
-                {member.bio}
-              </p>
+              )}
+              {member.mobile && (
+                <div>
+                  <h3 className="uppercase tracking-widest text-[10px] text-white/40 font-bold mb-1">Phone</h3>
+                  <a href={`tel:${member.mobile}`} className="text-electric-sapphire hover:text-white transition-colors">
+                    {member.mobile}
+                  </a>
+                </div>
+              )}
             </div>
           </motion.div>
 
@@ -101,13 +79,17 @@ const TeamMemberClient = ({ member }: { member: TeamMember }) => {
             className="relative h-[300px] lg:h-[500px] w-full order-1 lg:order-2"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10"></div>
-            <Image 
-              src={member.image}
-              alt={member.name}
-              fill
-              className="object-cover object-center hover:scale-105 transition-all duration-1000"
-              priority
-            />
+            {member.image ? (
+              <Image 
+                src={member.image}
+                alt={member.name}
+                fill
+                className="object-cover object-top hover:scale-105 transition-all duration-1000"
+                priority
+              />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#030303] border border-white/5 rounded-[24px]" />
+            )}
           </motion.div>
         </div>
 

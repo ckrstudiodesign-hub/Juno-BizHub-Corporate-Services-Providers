@@ -46,7 +46,7 @@ export default function OffshoreOverview() {
         steps: [
           { title: "Select Jurisdiction", description: "Choose between JAFZA, RAKICC, or Ajman Offshore based on your needs (e.g., JAFZA is required to own Dubai property)." },
           { title: "Document Collation", description: "Gather passport copies, utility bills, CVs, and a bank reference letter for the shareholders." },
-          { title: "Application & Due Diligence", description: "Submit the application through Golden Legacy as your registered agent." },
+          { title: "Application & Due Diligence", description: "Submit the application through Juno BizHub as your registered agent." },
           { title: "Incorporation", description: "Receive your Certificate of Incorporation and open your multi-currency bank account." }
         ]
       }}

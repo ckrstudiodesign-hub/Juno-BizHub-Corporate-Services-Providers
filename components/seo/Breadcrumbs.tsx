@@ -17,7 +17,7 @@ interface BreadcrumbsProps {
  * Automatically injects BreadcrumbList JSON-LD for SERP rich snippets.
  */
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
   
   // Construct standard home item
   const allItems = [{ name: 'Home', url: '/' }, ...items];
@@ -51,7 +51,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                 ) : (
                   <Link 
                     href={item.url} 
-                    className="hover:text-gold transition-colors flex items-center gap-1.5 whitespace-nowrap"
+                    className="hover:text-electric-sapphire transition-colors flex items-center gap-1.5 whitespace-nowrap"
                   >
                     {index === 0 && <Home className="w-3.5 h-3.5" />}
                     {item.name}

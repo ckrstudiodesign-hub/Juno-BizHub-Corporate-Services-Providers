@@ -19,7 +19,7 @@ interface SchemaProps {
   data: Record<string, any>;
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
 
 /**
  * Enterprise JSON-LD Structured Data Component
@@ -45,18 +45,18 @@ export default function SchemaMarkup({ type, data }: SchemaProps) {
 export const GlobalSchemas = {
   Organization: {
     '@type': 'Organization',
-    name: 'Golden Legacy',
+    name: 'Juno BizHub',
     url: SITE_URL,
     logo: `${SITE_URL}/golden-logo.png`,
     sameAs: [
       'https://www.facebook.com/profile.php?id=61586592230906',
-      'https://www.instagram.com/goldenlegacy.ae/',
-      'https://www.linkedin.com/company/golden-legacy-corporate-service/',
+      'https://www.instagram.com/junobizhub.com/',
+      'https://www.linkedin.com/company/juno-bizhub-corporate-service/',
     ],
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+971556656007',
+        telephone: '+971 54 129 0038',
         contactType: 'customer support',
         areaServed: 'AE',
         availableLanguage: ['English', 'Arabic'],
@@ -66,11 +66,11 @@ export const GlobalSchemas = {
   LocalBusiness: {
     '@type': 'ProfessionalService',
     '@id': `${SITE_URL}/#localbusiness`,
-    name: 'Golden Legacy Corporate Services',
+    name: 'Juno BizHub Corporate Services Providers',
     image: `${SITE_URL}/golden-logo.png`,
     url: SITE_URL,
-    telephone: '+971556656007',
-    email: 'info@goldenlegacy.ae',
+    telephone: '+971 54 129 0038',
+    email: 'info.junobh@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Dubai',
@@ -84,7 +84,7 @@ export const GlobalSchemas = {
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
     url: SITE_URL,
-    name: 'Golden Legacy',
+    name: 'Juno BizHub',
     description: 'Premier business setup and corporate services provider in Dubai, UAE.',
   }
 };

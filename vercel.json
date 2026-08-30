@@ -6,10 +6,10 @@
       "has": [
         {
           "type": "host",
-          "value": "goldenlegacy.ae"
+          "value": "junobizhub.com"
         }
       ],
-      "destination": "https://www.goldenlegacy.ae/:path*",
+      "destination": "https://www.junobizhub.com/:path*",
       "permanent": true
     }
   ],

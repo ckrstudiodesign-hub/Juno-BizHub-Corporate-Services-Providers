@@ -8,7 +8,7 @@ export default function ISOCertification() {
       heroImage="/images/mainland.png"
       description={[
         "ISO Certification is a powerful tool to demonstrate your company's commitment to quality, security, and operational efficiency. In the UAE's competitive market, holding a globally recognized ISO standard can be the deciding factor in winning government tenders and major corporate contracts.",
-        "Golden Legacy provides end-to-end ISO consultancy services, guiding you through the selection, implementation, and audit of the standards most relevant to your industrial sector. We work with certified bodies to ensure your Quality Management Systems (QMS) meet international benchmarks.",
+        "Juno BizHub provides end-to-end ISO consultancy services, guiding you through the selection, implementation, and audit of the standards most relevant to your industrial sector. We work with certified bodies to ensure your Quality Management Systems (QMS) meet international benchmarks.",
         "From ISO 9001 (Quality) to ISO 27001 (Information Security) and beyond, we handle the technical documentation and process mapping required for you to achieve certification with zero stress."
       ]}
       advantages={[
@@ -28,7 +28,7 @@ export default function ISOCertification() {
           title: "Why Choose ISO Certification?",
           content: [
             "Achieving ISO status is more than just a certificate; it is a transformation of your business DNA into a more efficient, quality-driven machine.",
-            "Choosing Golden Legacy as your consultant ensures that the implementation is not just 'for the certificate' but provides real, tangible value to your daily operations."
+            "Choosing Juno BizHub as your consultant ensures that the implementation is not just 'for the certificate' but provides real, tangible value to your daily operations."
           ]
         },
         {

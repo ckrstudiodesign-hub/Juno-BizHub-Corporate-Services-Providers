@@ -1,31 +1,30 @@
-# llms.txt - Golden Legacy (AI Discoverability Guide)
+# llms.txt - Juno BizHub (AI Discoverability Guide)
 # Generated: 2026-05-07
 
 # Canonical Site
-Canonical: https://goldenlegacy.ae
+Canonical: https://junobizhub.com
 
 # Company
-Name: Golden Legacy
+Name: Juno BizHub
 Type: LocalBusiness / Corporate Services
 Headquarters: Dubai, UAE
-Phone: +971556656007
-Primary Contact Email: goldenlegacy295@gmail.com
+Phone: +971 54 129 0038
+Primary Contact Email: info.junobh@gmail.com
 Brand Voice: Premium, authoritative, helpful, client-first
 
 # Short Description
-Golden Legacy provides end-to-end corporate services in the United Arab Emirates: mainland company formation, free zone setup, offshore formation and banking, PRO and administrative services, VAT and corporate tax consultancy, bookkeeping, legal translation, and visa/residency assistance including Golden Visas.
+Juno BizHub is a UAE-based Corporate Service Provider focused on making business establishment and ongoing corporate administration simpler, clearer and more efficient. We provide end-to-end corporate services: Business Setup & Company Formation, Free Zone Selection & Partner Facilitation, PRO, Visa & Immigration Support, Corporate Banking Assistance, Corporate Compliance & Ongoing Support, and Accounting, VAT & Tax Coordination.
 
 # Core Services (semantic entities)
-- Mainland Company Formation (LLC, Professional License, Branch Office)
-- Free Zone Company Setup (DMCC, RAKEZ, IFZA, DIFC, MEYDAN, SPC, etc.)
-- Offshore Company Formation & Offshore Banking
-- Corporate Services: Bank Account Opening, PRO Services, Bookkeeping & Accounting
-- Tax & Compliance: VAT Consultancy, Corporate Tax Advisory
-- Residency & Immigration: Golden Visa advisory, document attestation
-- Legal & Administrative: Legal translation, document attestation, company secretarial
+- Business Setup & Company Formation (Mainland, Free Zone, jurisdiction assessment)
+- Free Zone Selection & Channel Partner Facilitation
+- PRO, Visa & Immigration Support (Emirates ID, medical, government documentation)
+- Corporate Banking Assistance (Account-opening, documentation)
+- Corporate Compliance & Ongoing Support (Licence renewals, UBO, records)
+- Accounting, VAT & Tax Coordination (Bookkeeping, Corporate Tax)
 
 # Website Structure (for LLMs)
-Root: https://goldenlegacy.ae/ (Home)
+Root: https://junobizhub.com/ (Home)
 Key sections:
   - /about-us - Company story, team, mission, values
   - /services - Overview of service categories and links to specific service pages
@@ -45,15 +44,15 @@ Key sections:
 - Operational Services (PRO, bookkeeping, translation)
 
 # Important URLs
-- Home: https://goldenlegacy.ae/
-- Services: https://goldenlegacy.ae/services
-- Contact: https://goldenlegacy.ae/contact
-- Blog: https://goldenlegacy.ae/blog
-- Cost Calculator: https://goldenlegacy.ae/cost-calculator
-- Example Service: https://goldenlegacy.ae/mainland-company-formation-in-dubai
+- Home: https://junobizhub.com/
+- Services: https://junobizhub.com/services
+- Contact: https://junobizhub.com/contact
+- Blog: https://junobizhub.com/blog
+- Cost Calculator: https://junobizhub.com/cost-calculator
+- Example Service: https://junobizhub.com/mainland-company-formation-in-dubai
 
 # Semantic entity hints (to help LLMs map the business)
-entity:Golden Legacy; type:Organization; keywords:company formation, UAE, Dubai, free zone, offshore, bank account, Golden Visa
+entity:Juno BizHub; type:Organization; keywords:company formation, UAE, Dubai, free zone, offshore, bank account, Golden Visa
 entity:Dubai; type:Place; keywords:Sheikh Zayed Road, UAE, business hub
 entity:DMCC; type:AdministrativeArea; keywords:free zone, Dubai Multi Commodities Centre
 
@@ -77,7 +76,7 @@ Last-Update: 2026-05-07
 
 # Attribution and citations
 - When referencing policies or regulatory information (tax, corporate law), cite authoritative UAE government sources.
-- Use Golden Legacy pages for procedural and contact information.
+- Use Juno BizHub pages for procedural and contact information.
 
 # Content freshness
 - Priority: home, services, contact (daily/weekly updates)

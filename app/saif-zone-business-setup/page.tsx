@@ -9,7 +9,7 @@ export default function SAIFSetup() {
       description={[
         "The Sharjah Airport International Free Zone (SAIF Zone), established in 1995, is one of the UAE's oldest and most respected business hubs. Renowned for its unparalleled strategic location adjacent to Sharjah International Airport, it has successfully licensed over 8,000 companies from more than 160 countries. It serves as a critical junction for businesses looking to export to the CIS countries, Africa, and the Indian Subcontinent.",
         "SAIF Zone is distinguished by its 'one-day trade license' issuance, making it the premier choice for fast-track entrepreneurs who need to commence operations immediately. Its robust infrastructure includes premium office spaces, high-tech warehouses, and specialized industrial plots designed for large-scale manufacturing and assembly.",
-        "Golden Legacy provides comprehensive support for SAIF Zone integration, ensuring that your business leverages its unique logistics advantages and tax-exempt status to maximize global reach and operational efficiency."
+        "Juno BizHub provides comprehensive support for SAIF Zone integration, ensuring that your business leverages its unique logistics advantages and tax-exempt status to maximize global reach and operational efficiency."
       ]}
       advantages={[
         "100% Foreign Ownership and complete capital/profit repatriation",
@@ -40,7 +40,7 @@ export default function SAIFSetup() {
         },
         {
           title: "Seamless Integration",
-          content: "Our team at Golden Legacy manages the entire setup journey—from initial security clearance to final visa stamping. We ensure your corporate documents are structured for immediate banking eligibility, allowing you to start trading from your new SAIF Zone base with zero administrative delays."
+          content: "Our team at Juno BizHub manages the entire setup journey—from initial security clearance to final visa stamping. We ensure your corporate documents are structured for immediate banking eligibility, allowing you to start trading from your new SAIF Zone base with zero administrative delays."
         }
       ]}
     />

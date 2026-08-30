@@ -1,12 +1,12 @@
 ---
 title: "Corporate Tax UAE — Compliance & Advisory"
-meta_description: "Golden Legacy explains UAE corporate tax basics: rates, exemptions, registration, and filing requirements to keep your business compliant."
-canonical: https://www.goldenlegacy.ae/corporate-tax-uae
+meta_description: "Juno BizHub explains UAE corporate tax basics: rates, exemptions, registration, and filing requirements to keep your business compliant."
+canonical: https://www.junobizhub.com/corporate-tax-uae
 ---
 
 # Corporate Tax in the UAE
 
-**Summary:** The UAE introduced federal corporate tax for financial years starting on or after June 1, 2023. Golden Legacy provides advisory services to ensure compliance with registration, filing, and record-keeping obligations.
+**Summary:** The UAE introduced federal corporate tax for financial years starting on or after June 1, 2023. Juno BizHub provides advisory services to ensure compliance with registration, filing, and record-keeping obligations.
 
 ## Key Points
 - Tax rates: 0% on taxable income up to AED 375,000; 9% thereafter.

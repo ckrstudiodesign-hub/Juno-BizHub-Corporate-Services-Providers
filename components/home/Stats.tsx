@@ -12,7 +12,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-gold relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-electric-sapphire relative overflow-hidden">
       {/* Decorative Shine Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_5s_infinite] skew-x-12"></div>
       

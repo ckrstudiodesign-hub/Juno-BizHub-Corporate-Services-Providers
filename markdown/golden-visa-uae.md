@@ -1,12 +1,12 @@
 ---
 title: "Golden Visa UAE — Residency & Long-Term Stay Guidance"
-meta_description: "Golden Legacy provides Golden Visa advisory and immigration support for investors, entrepreneurs, and skilled professionals seeking long-term residency in the UAE."
-canonical: https://www.goldenlegacy.ae/golden-visa-uae
+meta_description: "Juno BizHub provides Golden Visa advisory and immigration support for investors, entrepreneurs, and skilled professionals seeking long-term residency in the UAE."
+canonical: https://www.junobizhub.com/golden-visa-uae
 ---
 
 # Golden Visa UAE
 
-**Summary:** The UAE Golden Visa offers renewable long-term residency for investors, entrepreneurs, and specialized talents. Golden Legacy advises on eligibility, documentation, family sponsorship, and the application process.
+**Summary:** The UAE Golden Visa offers renewable long-term residency for investors, entrepreneurs, and specialized talents. Juno BizHub advises on eligibility, documentation, family sponsorship, and the application process.
 
 ## Key Benefits
 - 5 or 10 year renewable residency

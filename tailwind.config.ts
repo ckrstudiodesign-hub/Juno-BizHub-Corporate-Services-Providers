@@ -10,10 +10,11 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        gold: {
-          DEFAULT: "#D4AF37",
-          hover: "#F5D76E",
-        },
+        'electric-sapphire': '#5465ff',
+        'cornflower-blue': '#788bff',
+        'baby-blue-ice': '#9bb1ff',
+        'periwinkle': '#bfd7ff',
+        'light-cyan': '#e2fdff',
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

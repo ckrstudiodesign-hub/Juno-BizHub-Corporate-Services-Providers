@@ -1,13 +1,13 @@
 ---
-title: "About Golden Legacy — Corporate Setup & Advisory in Dubai"
-meta_description: "Golden Legacy is a Dubai-based corporate service provider specializing in company formation, banking, PRO, taxation, and residency services for entrepreneurs and investors in the UAE."
-canonical: https://www.goldenlegacy.ae/about-us
+title: "About Juno BizHub — Corporate Setup & Advisory in Dubai"
+meta_description: "Juno BizHub is a Dubai-based corporate service provider specializing in company formation, banking, PRO, taxation, and residency services for entrepreneurs and investors in the UAE."
+canonical: https://www.junobizhub.com/about-us
 ---
 
-# About Golden Legacy
+# About Juno BizHub
 
 **Who we are:**
-Golden Legacy is a Dubai-headquartered corporate services firm focused on enabling founders and investors to set up and scale businesses in the UAE. The leadership includes Ms. Jasbir Kaur (Owner & Director) and Mr. Arvind Pal (CEO), with a cross-functional team of corporate services and PRO experts.
+Juno BizHub is a Dubai-headquartered corporate services firm focused on enabling founders and investors to set up and scale businesses in the UAE. The leadership includes a cross-functional team of corporate services, tax, and finance experts.
 
 **Mission & Values:**
 - Deliver premium end-to-end company formation and corporate advisory.

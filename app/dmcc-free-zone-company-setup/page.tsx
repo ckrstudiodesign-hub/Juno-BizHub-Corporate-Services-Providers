@@ -9,7 +9,7 @@ export default function DMCCSetup() {
       description={[
         "Established in 2002, the Dubai Multi Commodities Centre (DMCC) is the UAE's largest and most successful free zone, strategically located on Sheikh Zayed Road in the heart of Jumeirah Lakes Towers (JLT). It has been awarded the prestigious 'Global Free Zone of the Year' for multiple consecutive years by the Financial Times, solidifying its reputation as a premier destination for global trade.",
         "DMCC is much more than just a business zone; it is a world-class ecosystem for trade across a wide range of commodities—from gold, diamonds, and tea to technology, financial services, and renewable energy. It provides companies with unparalleled access to international markets, high-end infrastructure, and a robust regulatory framework overseen by the DMCC Authority.",
-        "Golden Legacy offers specialized advisory for DMCC setup, ensuring your business is positioned to leverage the zone's unique value proposition, from its strategic location between two major international airports to its thriving community of over 21,000 member companies."
+        "Juno BizHub offers specialized advisory for DMCC setup, ensuring your business is positioned to leverage the zone's unique value proposition, from its strategic location between two major international airports to its thriving community of over 21,000 member companies."
       ]}
       advantages={[
         "100% Foreign Ownership and complete operational control",

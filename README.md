@@ -1,8 +1,8 @@
-# Golden Legacy Corporate Services Website v2.0
+# Juno BizHub Corporate Services Providers Website v2.0
 
 **Designed & Developed by [CKR Creatives](https://ckrcreatives.com)**
 
-Professional corporate website for Golden Legacy Corporate Services - specializing in business setup, licensing, and corporate services in UAE.
+Professional corporate website for Juno BizHub Corporate Services Providers - specializing in business setup, licensing, and corporate services in UAE.
 
 ---
 
@@ -23,7 +23,7 @@ Professional corporate website for Golden Legacy Corporate Services - specializi
 📱 **Fully Responsive**
 - Mobile-first design approach
 - Tablet and desktop optimized layouts
-- Dark theme with gold accent branding (#030303 / #d4af37)
+- Dark theme with gold accent branding (#030303 / #5465ff)
 
 🎨 **Premium Branding**
 - Custom typography (Inter, Roboto Slab, Roboto Condensed)
@@ -72,8 +72,8 @@ Professional corporate website for Golden Legacy Corporate Services - specializi
 
 ```bash
 # Clone the repository
-git clone https://github.com/goldenlegacy295-create/golden-legacy-corporate-service-website-v2.git
-cd golden-legacy-corporate-service-website-v2
+git clone https://github.com/junobizhub295-create/juno-bizhub-corporate-service-website-v2.git
+cd juno-bizhub-corporate-service-website-v2
 
 # Install dependencies
 npm install
@@ -118,7 +118,7 @@ npm run export:static
 ## 📁 Project Structure
 
 ```
-golden-legacy-corporate-services/
+juno-bizhub-corporate-services/
 ├── app/                           # Next.js App Router
 │   ├── layout.tsx                 # Root layout with metadata
 │   ├── page.tsx                   # Homepage
@@ -173,7 +173,7 @@ golden-legacy-corporate-services/
 ### Colors
 ```
 Dark Background:  #030303
-Gold Accent:      #d4af37
+Gold Accent:      #5465ff
 Light Text:       #ffffff
 Secondary:        #999999
 ```
@@ -284,7 +284,7 @@ NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
 - **Privacy Policy:** `/privacy-policy`
 - **PDPL Compliance:** UAE Personal Data Protection Law
 - **Data Retention:** As per company policy
-- **Contact:** support@goldenlegacycs.ae
+- **Contact:** support@junobizhubcs.ae
 
 ---
 
@@ -308,7 +308,7 @@ Example:
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Service Title | Golden Legacy",
+  title: "Service Title | Juno BizHub",
   description: "Service description...",
 };
 
@@ -327,28 +327,26 @@ export default function ServicePage() {
 
 ## 📞 Support & Contact
 
-### Golden Legacy Corporate Services Provider LLC
+### Juno BizHub Corporate Services Providers LLC
 
 **Office Address**
 ```
-M 06, Emgate Building, 214 Sheikh Zayed Road
+106 Sheikh Zayed Rd - Trade Center First - Dubai, Aspin Commercial Tower
 Near Business Bay Metro Station
 Dubai, United Arab Emirates
 ```
 
 **Contact Information**
-- 📧 Email: info@goldenlegacy.ae
-- 📱 Phone/WhatsApp: +971 55 665 6007
+- 📧 Email: info.junobh@gmail.com
+- 📱 Phone/WhatsApp: +971 54 129 0038
 
 **Services**
-- Business Setup & Registration
-- Free Zone Company Formation
-- Licensing & Compliance
-- Accounting & Bookkeeping
-- Corporate Tax Consultancy
-- Golden Visa Services
-- Bank Account Opening
-- Legal Translation & Document Attestation
+- Business Setup & Company Formation
+- Free Zone Selection & Channel Partner Facilitation
+- PRO, Visa & Immigration Support
+- Corporate Banking Assistance
+- Corporate Compliance & Ongoing Support
+- Accounting, VAT & Tax Coordination
 
 ---
 
@@ -378,9 +376,9 @@ Dubai, United Arab Emirates
 
 ## 📄 License
 
-© 2026 Golden Legacy Corporate Services. All rights reserved.
+© 2026 Juno BizHub Corporate Services Providers. All rights reserved.
 
-This website and all content are the property of Golden Legacy Corporate Services.
+This website and all content are the property of Juno BizHub Corporate Services Providers.
 
 **Design & Development:** CKR Creatives
 

@@ -85,7 +85,7 @@ export default function LeadModal() {
 
       await submitToWeb3Forms({
         accessKey,
-        subject: 'New Lead - Golden Legacy (Modal)',
+        subject: 'New Lead - Juno BizHub (Modal)',
         name,
         email,
         phone,
@@ -131,11 +131,11 @@ export default function LeadModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="relative w-full max-w-md bg-[#0a0a0a] border border-gold/20 rounded-[2rem] shadow-[0_0_50px_rgba(212,175,55,0.1)] overflow-hidden"
+            className="relative w-full max-w-md bg-[#0a0a0a] border border-electric-sapphire/20 rounded-[2rem] shadow-[0_0_50px_rgba(84,101,255,0.1)] overflow-hidden"
           >
             {/* Decorative Background Elements */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 blur-[50px] rounded-full pointer-events-none -mr-10 -mt-10" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gold/5 blur-[50px] rounded-full pointer-events-none -ml-10 -mb-10" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-electric-sapphire/10 blur-[50px] rounded-full pointer-events-none -mr-10 -mt-10" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-electric-sapphire/5 blur-[50px] rounded-full pointer-events-none -ml-10 -mb-10" />
 
             {/* Close Button */}
             <button
@@ -148,8 +148,8 @@ export default function LeadModal() {
             <div className="p-8 relative z-10">
               {isSuccess ? (
                 <div className="py-12 text-center space-y-4">
-                  <div className="w-20 h-20 mx-auto rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center">
-                    <CheckCircle2 className="text-gold" size={40} />
+                  <div className="w-20 h-20 mx-auto rounded-full bg-electric-sapphire/15 border border-electric-sapphire/30 flex items-center justify-center">
+                    <CheckCircle2 className="text-electric-sapphire" size={40} />
                   </div>
                   <h3 className="text-2xl font-bold text-white">Form submitted</h3>
                   <p className="text-gray-400 text-sm">Your details have been sent successfully.</p>
@@ -157,7 +157,7 @@ export default function LeadModal() {
               ) : (
               <>
               <div className="text-center space-y-2 mb-8">
-                <span className="text-gold text-xs font-black uppercase tracking-[0.2em]">Welcome to Golden Legacy</span>
+                <span className="text-electric-sapphire text-xs font-black uppercase tracking-[0.2em]">Welcome to Juno BizHub</span>
                 <h2 className="text-2xl md:text-3xl font-bold text-white">Let's Start Your Journey</h2>
                 <p className="text-gray-400 text-sm font-light">Enter your details to receive a personalized consultation.</p>
               </div>
@@ -173,39 +173,39 @@ export default function LeadModal() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-1">
                   <div className="relative group">
-                    <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-gold transition-colors" size={18} />
+                    <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-electric-sapphire transition-colors" size={18} />
                     <input
                       ref={nameRef}
                       type="text"
                       placeholder="Full Name"
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all text-sm font-medium"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-electric-sapphire/50 focus:bg-white/10 transition-all text-sm font-medium"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1">
                   <div className="relative group">
-                    <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-gold transition-colors" size={18} />
+                    <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-electric-sapphire transition-colors" size={18} />
                     <input
                       ref={phoneRef}
                       type="tel"
                       placeholder="Phone Number"
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all text-sm font-medium"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-electric-sapphire/50 focus:bg-white/10 transition-all text-sm font-medium"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1">
                   <div className="relative group">
-                    <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-gold transition-colors" size={18} />
+                    <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-electric-sapphire transition-colors" size={18} />
                     <input
                       ref={emailRef}
                       type="email"
                       placeholder="Email Address"
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-gold/50 focus:bg-white/10 transition-all text-sm font-medium"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-electric-sapphire/50 focus:bg-white/10 transition-all text-sm font-medium"
                     />
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export default function LeadModal() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 mt-4 bg-gold hover:bg-white text-black font-black uppercase tracking-widest text-xs rounded-xl shadow-[0_10px_20px_rgba(212,175,55,0.2)] hover:shadow-none hover:-translate-y-1 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 mt-4 bg-electric-sapphire hover:bg-white text-black font-black uppercase tracking-widest text-xs rounded-xl shadow-[0_10px_20px_rgba(84,101,255,0.2)] hover:shadow-none hover:-translate-y-1 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Processing...' : 'Get Started'} {!isSubmitting && <Send size={16} />}
                 </button>

@@ -1,15 +1,15 @@
 ---
-title: "Contact Golden Legacy — Dubai Corporate Services"
-meta_description: "Get in touch with Golden Legacy in Dubai for company formation, banking, VAT, PRO and residency services. Phone +971 55 665 6007."
-canonical: https://www.goldenlegacy.ae/contact
+title: "Contact Juno BizHub — Dubai Corporate Services"
+meta_description: "Get in touch with Juno BizHub in Dubai for company formation, banking, VAT, PRO and residency services. Phone +971 54 129 0038."
+canonical: https://www.junobizhub.com/contact
 ---
 
-# Contact Golden Legacy
+# Contact Juno BizHub
 
-**Headquarters:** Sheikh Zayed Road, Dubai, UAE
+**Headquarters:** 106 Sheikh Zayed Rd - Trade Center First - Dubai, Aspin Commercial Tower
 
-**Phone:** +971 55 665 6007
-**Email:** goldenlegacy295@gmail.com
+**Phone:** +971 54 129 0038
+**Email:** info.junobh@gmail.com
 
 **Office Hours:** Monday to Saturday | 9:30 AM – 6:30 PM (Closed on 1st & 2nd Saturdays)
 

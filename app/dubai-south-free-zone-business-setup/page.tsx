@@ -40,7 +40,7 @@ export default function DubaiSouthSetup() {
         },
         {
           title: "Setup Support & Logistics",
-          content: "Golden Legacy provides expert advisory for Dubai South integration, ensuring your DWC-LLC is structured for maximum efficiency. We handle everything from activity clearance to visa processing, allowing you to focus on scaling your business within Dubai's newest and most ambitious economic frontier."
+          content: "Juno BizHub provides expert advisory for Dubai South integration, ensuring your DWC-LLC is structured for maximum efficiency. We handle everything from activity clearance to visa processing, allowing you to focus on scaling your business within Dubai's newest and most ambitious economic frontier."
         }
       ]}
     />

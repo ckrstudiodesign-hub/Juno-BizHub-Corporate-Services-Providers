@@ -7,7 +7,7 @@ export default function TradeFinanceServices() {
       subtitle="Fueling Global Commerce"
       heroImage="/images/office.png"
       description={[
-        "In the dynamic world of international trade, liquidity and risk mitigation are paramount. Golden Legacy connects your business with robust trade finance solutions, empowering you to expand your global footprint with confidence.",
+        "In the dynamic world of international trade, liquidity and risk mitigation are paramount. Juno BizHub connects your business with robust trade finance solutions, empowering you to expand your global footprint with confidence.",
         "We specialize in structuring trade facilities such as Letters of Credit (LCs) and Bank Guarantees (BGs), bridging the trust gap between buyers and sellers across borders.",
         "Our team works with a network of banks and financial institutions to secure competitive rates and flexible terms, ensuring your supply chain remains uninterrupted and your capital is optimized."
       ]}

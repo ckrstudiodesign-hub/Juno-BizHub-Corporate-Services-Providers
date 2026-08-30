@@ -1,12 +1,12 @@
 ---
-title: "Mainland Company Formation in Dubai — Golden Legacy"
-meta_description: "Launch your business in the UAE mainland with Golden Legacy: LLC formation, professional licenses, local approvals, and MOA drafting."
-canonical: https://www.goldenlegacy.ae/mainland-company-formation-in-dubai
+title: "Mainland Company Formation in Dubai — Juno BizHub"
+meta_description: "Launch your business in the UAE mainland with Juno BizHub: LLC formation, professional licenses, local approvals, and MOA drafting."
+canonical: https://www.junobizhub.com/mainland-company-formation-in-dubai
 ---
 
 # Mainland Company Formation in Dubai
 
-**Summary:** Mainland formation grants access to the UAE local market with flexible operations across the country. Golden Legacy guides clients through activity selection, legal structure, trade name registration, initial approvals, and MOA/LSA drafting.
+**Summary:** Mainland formation grants access to the UAE local market with flexible operations across the country. Juno BizHub guides clients through activity selection, legal structure, trade name registration, initial approvals, and MOA/LSA drafting.
 
 ## Key Steps
 1. Choose business activity and legal structure (LLC, Sole Establishment, Civil Company).

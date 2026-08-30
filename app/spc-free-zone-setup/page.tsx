@@ -9,7 +9,7 @@ export default function SPCSetup() {
       description={[
         "Sharjah Publishing City (SPC) Free Zone is the world's first and largest publishing and printing free zone, offering a specialized and highly collaborative ecosystem for publishers, creative professionals, and general entrepreneurs. Launched by the Sharjah Book Authority, SPC is designed to be a global gateway for the media and book industries, providing world-class infrastructure and a business-friendly legal framework.",
         "SPC Free Zone is unique for its incredible speed of incorporation, often capable of issuing trade licenses within just two hours. This efficiency, combined with its strategic location in Sharjah and proximity to Dubai, makes it one of the most attractive options for digital nomads, consultants, and startups who value time and convenience above all else.",
-        "Golden Legacy provides specialized support for SPC setups, helping you leverage their 'dual-licensing' model which allows companies to operate within the free zone while also having the flexibility to trade in the UAE mainland through a simplified regulatory process."
+        "Juno BizHub provides specialized support for SPC setups, helping you leverage their 'dual-licensing' model which allows companies to operate within the free zone while also having the flexibility to trade in the UAE mainland through a simplified regulatory process."
       ]}
       advantages={[
         "100% Foreign Ownership and full profit repatriation",
@@ -57,7 +57,7 @@ export default function SPCSetup() {
         },
         {
           title: "Setup Efficiency",
-          content: "Our team at Golden Legacy manages the entire SPC integration process—from initial name approval to visa stamping—ensuring you benefit from the zone's record-breaking speed. We ensure all your documents are 'bank-ready' from day one, facilitating smooth financial operations for your new Sharjah-based enterprise."
+          content: "Our team at Juno BizHub manages the entire SPC integration process—from initial name approval to visa stamping—ensuring you benefit from the zone's record-breaking speed. We ensure all your documents are 'bank-ready' from day one, facilitating smooth financial operations for your new Sharjah-based enterprise."
         }
       ]}
     />

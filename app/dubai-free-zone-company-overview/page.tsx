@@ -9,7 +9,7 @@ export default function FreeZoneOverview() {
       description={[
         "Free Trade Zones (FTZs) are specially designated economic areas in the UAE that provide a highly supportive and tax-efficient environment for international businesses. Each Free Zone is designed to cater to specific industrial sectors—ranging from technology and media to commodities and logistics—allowing businesses to operate within a specialized ecosystem.",
         "Unlike Mainland companies, Free Zone entities offer 100% foreign ownership without the need for a local partner, coupled with full repatriation of capital and profits. This makes them the primary choice for visionary entrepreneurs and global corporations looking to establish a strategic base in the Middle East.",
-        "Golden Legacy provides end-to-end advisory services to help you select the ideal Free Zone that aligns with your specific business activities, budgetary requirements, and future growth plans across Dubai, Abu Dhabi, and the Northern Emirates."
+        "Juno BizHub provides end-to-end advisory services to help you select the ideal Free Zone that aligns with your specific business activities, budgetary requirements, and future growth plans across Dubai, Abu Dhabi, and the Northern Emirates."
       ]}
       advantages={[
         "100% Foreign Ownership from day one",

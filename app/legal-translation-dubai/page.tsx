@@ -7,7 +7,7 @@ export default function LegalTranslation() {
       subtitle="Accurate & Certified Professional Translations"
       heroImage="/images/mainland.png"
       description={[
-        "In the UAE, Arabic is the primary language for all official government documentation. Any legal document issued in another language must be translated into Arabic by a licensed legal translator approved by the UAE Ministry of Justice. Golden Legacy provides high-precision legal translation services that are accepted by all courts and government entities.",
+        "In the UAE, Arabic is the primary language for all official government documentation. Any legal document issued in another language must be translated into Arabic by a licensed legal translator approved by the UAE Ministry of Justice. Juno BizHub provides high-precision legal translation services that are accepted by all courts and government entities.",
         "We specialize in the translation of corporate MOAs, Power of Attorneys, court orders, medical reports, and educational certificates. Our translations carry the weight of authority required for filing at the Department of Economy and Tourism (DET), the Ministry of Labor, and the UAE Judicial system.",
         "Our team of sworn translators ensures that the legal terminology is preserved with 100% accuracy, maintaining the integrity and enforceability of your original documents."
       ]}
@@ -28,7 +28,7 @@ export default function LegalTranslation() {
           title: "Why Choose Our Translation Service?",
           content: [
             "A minor error in legal translation can lead to significant delays in license processing or legal disputes. We provide an additional layer of proofreading to ensure total accuracy.",
-            "Choosing Golden Legacy means your documents are ready for immediate use in any UAE government department, from a Notary Public to the Ministry of Foreign Affairs."
+            "Choosing Juno BizHub means your documents are ready for immediate use in any UAE government department, from a Notary Public to the Ministry of Foreign Affairs."
           ]
         },
         {

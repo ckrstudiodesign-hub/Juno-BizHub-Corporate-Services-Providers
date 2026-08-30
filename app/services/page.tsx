@@ -70,11 +70,11 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#030303] text-white overflow-hidden font-sans selection:bg-gold/30">
+    <main className="min-h-screen bg-[#030303] text-white overflow-hidden font-sans selection:bg-electric-sapphire/30">
       
       {/* Background Ambience */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-gold/5 blur-[150px] rounded-full"></div>
+        <div className="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-electric-sapphire/5 blur-[150px] rounded-full"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900/5 blur-[150px] rounded-full"></div>
       </div>
 
@@ -86,9 +86,9 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center justify-center gap-3"
           >
-            <div className="h-[1px] w-12 bg-gold/50"></div>
-            <span className="text-gold font-black tracking-[0.3em] uppercase text-xs">World-Class Expertise</span>
-            <div className="h-[1px] w-12 bg-gold/50"></div>
+            <div className="h-[1px] w-12 bg-electric-sapphire/50"></div>
+            <span className="text-electric-sapphire font-black tracking-[0.3em] uppercase text-xs">World-Class Expertise</span>
+            <div className="h-[1px] w-12 bg-electric-sapphire/50"></div>
           </motion.div>
           
           <motion.h1 
@@ -98,7 +98,7 @@ export default function ServicesPage() {
             className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9]"
           >
             OUR <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-white to-gold animate-shimmer">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-sapphire via-white to-electric-sapphire animate-shimmer">
               SERVICES
             </span>
           </motion.h1>
@@ -125,20 +125,20 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: idx * 0.1, duration: 0.7 }}
-                className="group relative bg-[#0a0a0a] border border-white/5 rounded-[2.5rem] p-8 md:p-12 hover:border-gold/30 transition-all duration-700 overflow-hidden"
+                className="group relative bg-[#0a0a0a] border border-white/5 rounded-[2.5rem] p-8 md:p-12 hover:border-electric-sapphire/30 transition-all duration-700 overflow-hidden"
               >
                 {/* Hover Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-electric-sapphire/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="mb-8 flex items-start justify-between">
-                    <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-gold group-hover:scale-110 transition-all duration-500 shadow-xl">
-                      <service.icon className="w-6 h-6 text-gold group-hover:text-black transition-colors duration-500" />
+                    <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-electric-sapphire group-hover:scale-110 transition-all duration-500 shadow-xl">
+                      <service.icon className="w-6 h-6 text-electric-sapphire group-hover:text-black transition-colors duration-500" />
                     </div>
                     <span className="text-white/20 font-black text-4xl select-none">0{idx + 1}</span>
                   </div>
 
-                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-electric-sapphire transition-colors duration-300">
                     {service.title}
                   </h3>
                   
@@ -153,15 +153,15 @@ export default function ServicesPage() {
                         href={link.href}
                         className="flex items-center gap-3 text-sm text-gray-400 hover:text-white group/link transition-colors py-1"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold/50 group-hover/link:bg-gold transition-colors"></span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-electric-sapphire/50 group-hover/link:bg-electric-sapphire transition-colors"></span>
                         <span className="font-medium tracking-wide">{link.name}</span>
-                        <ArrowRight size={12} className="opacity-0 -translate-x-2 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all text-gold" />
+                        <ArrowRight size={12} className="opacity-0 -translate-x-2 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all text-electric-sapphire" />
                       </Link>
                     ))}
                   </div>
 
                   <div className="mt-10 pt-8 border-t border-dashed border-white/10 flex justify-end">
-                     <span className="text-xs font-black uppercase tracking-[0.2em] text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-2 group-hover:translate-y-0 flex items-center gap-2">
+                     <span className="text-xs font-black uppercase tracking-[0.2em] text-electric-sapphire opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-2 group-hover:translate-y-0 flex items-center gap-2">
                         Explore Category <ArrowRight size={14} />
                      </span>
                   </div>
@@ -176,13 +176,13 @@ export default function ServicesPage() {
       <section className="py-24 px-4 relative z-10 border-t border-white/5">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-3xl md:text-5xl font-black text-white">
-            Ready to Start Your <span className="text-gold">Journey?</span>
+            Ready to Start Your <span className="text-electric-sapphire">Journey?</span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
             Get a personalized cost estimate for your business setup or schedule a consultation with our experts.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
-             <Link href="/cost-calculator" className="px-10 py-4 bg-gold text-black font-black uppercase tracking-widest text-xs rounded-full hover:bg-white transition-all shadow-[0_10px_40px_rgba(212,175,55,0.2)] hover:shadow-none hover:-translate-y-1">
+             <Link href="/cost-calculator" className="px-10 py-4 bg-electric-sapphire text-black font-black uppercase tracking-widest text-xs rounded-full hover:bg-white transition-all shadow-[0_10px_40px_rgba(84,101,255,0.2)] hover:shadow-none hover:-translate-y-1">
                 Calculate Cost
              </Link>
              <Link href="/contact" className="px-10 py-4 bg-white/5 text-white border border-white/10 font-black uppercase tracking-widest text-xs rounded-full hover:bg-white hover:text-black transition-all hover:-translate-y-1">

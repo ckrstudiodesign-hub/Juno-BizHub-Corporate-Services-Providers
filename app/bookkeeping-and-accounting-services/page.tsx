@@ -7,7 +7,7 @@ export default function Bookkeeping() {
       subtitle="Financial Clarity for Corporate Compliance"
       heroImage="/images/mainland.png"
       description={[
-        "Modern business in the UAE requires more than just high-level strategy; it requires rigorous and accurate financial record-keeping to meet VAT and Corporate Tax standards. Golden Legacy provides professional bookkeeping and accounting services designed to give you total visibility over your finances while ensuring 100% regulatory compliance.",
+        "Modern business in the UAE requires more than just high-level strategy; it requires rigorous and accurate financial record-keeping to meet VAT and Corporate Tax standards. Juno BizHub provides professional bookkeeping and accounting services designed to give you total visibility over your finances while ensuring 100% regulatory compliance.",
         "We act as your extended finance department, managing day-to-day transactions, bank reconciliations, and payroll processing. Our services are tailored for startups, SMEs, and established firms that require professional-grade financial reporting without the overhead of a full-time in-house accountant.",
         "By integrating smart cloud-based accounting solutions, we provide you with real-time financial dashboards, allowing you to make data-driven decisions that propel your business forward in the UAE market."
       ]}
@@ -28,7 +28,7 @@ export default function Bookkeeping() {
           title: "Why Is Professional Bookkeeping Essential?",
           content: [
             "With the introduction of Corporate Tax, holding a set of audited financial statements is becoming mandatory for many business categories. Professional bookkeeping is the foundation for a successful audit.",
-            "Choosing Golden Legacy for your accounting needs ensures that your books are structured to meet the specific requirements of UAE banks and the Federal Tax Authority."
+            "Choosing Juno BizHub for your accounting needs ensures that your books are structured to meet the specific requirements of UAE banks and the Federal Tax Authority."
           ]
         },
         {
@@ -42,7 +42,7 @@ export default function Bookkeeping() {
           ]
         },
         {
-          title: "The Legacy Finance Standard",
+          title: "The bizhub Finance Standard",
           content: "We don't just 'do the numbers'; we provide financial insights. Our monthly reviews help you understand your burn rate, profit margins, and ROI, ensuring your UAE entity remains profitable and scalable for years to come."
         }
       ]}

@@ -43,7 +43,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   }
 
   const relatedPosts = getRelatedPosts(post.meta, 3);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
   const fullUrl = `${siteUrl}/blog/${post.meta.slug}`;
 
   // JSON-LD Schemas
@@ -59,7 +59,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Golden Legacy',
+      name: 'Juno BizHub',
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/golden-logo.png`,
@@ -90,14 +90,14 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Back Link */}
-        <Link href="/blog" className="inline-flex items-center gap-2 text-gold text-[10px] font-black tracking-[0.4em] uppercase mb-12 hover:gap-4 transition-all opacity-60 hover:opacity-100">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-electric-sapphire text-[10px] font-black tracking-[0.4em] uppercase mb-12 hover:gap-4 transition-all opacity-60 hover:opacity-100">
           <ChevronLeft size={14} /> Back to Insights
         </Link>
 
         {/* Header */}
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="px-3 py-1 bg-gold/10 text-gold border border-gold/20 text-xs font-black uppercase tracking-widest rounded-full">
+            <span className="px-3 py-1 bg-electric-sapphire/10 text-electric-sapphire border border-electric-sapphire/20 text-xs font-black uppercase tracking-widest rounded-full">
               {post.meta.category}
             </span>
           </div>
@@ -117,8 +117,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
             
             <div className="flex items-center gap-6 text-gray-400 text-sm font-medium">
-              <span className="flex items-center gap-2"><Calendar size={16} className="text-gold" /> {format(parseISO(post.meta.date), 'MMMM d, yyyy')}</span>
-              <span className="flex items-center gap-2"><Clock size={16} className="text-gold" /> {post.meta.readingTime}</span>
+              <span className="flex items-center gap-2"><Calendar size={16} className="text-electric-sapphire" /> {format(parseISO(post.meta.date), 'MMMM d, yyyy')}</span>
+              <span className="flex items-center gap-2"><Clock size={16} className="text-electric-sapphire" /> {post.meta.readingTime}</span>
             </div>
           </div>
         </header>
@@ -129,7 +129,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Content */}
-        <div className="prose prose-invert prose-lg prose-gold max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-gold hover:prose-a:text-white prose-img:rounded-3xl">
+        <div className="prose prose-invert prose-lg prose-gold max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-electric-sapphire hover:prose-a:text-white prose-img:rounded-3xl">
           <MDXRemote source={post.content} />
         </div>
         
@@ -150,21 +150,21 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       {relatedPosts.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-32 pt-20 border-t border-white/5">
           <div className="flex items-center gap-6 mb-12">
-            <div className="w-12 h-px bg-gold"></div>
+            <div className="w-12 h-px bg-electric-sapphire"></div>
             <h2 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tight">Related Insights</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {relatedPosts.map((rp) => (
                <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group block">
-                <article className="bg-[#0a0a0a] rounded-3xl overflow-hidden border border-white/5 hover:border-gold/30 transition-colors shadow-2xl h-full flex flex-col">
+                <article className="bg-[#0a0a0a] rounded-3xl overflow-hidden border border-white/5 hover:border-electric-sapphire/30 transition-colors shadow-2xl h-full flex flex-col">
                   <div className="relative h-48 w-full overflow-hidden">
                     <Image src={rp.image} alt={rp.title} fill className="object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
-                    <span className="text-gold text-[10px] font-black uppercase tracking-widest mb-3 block">{rp.category}</span>
-                    <h3 className="text-lg font-bold text-white group-hover:text-gold transition-colors mb-4 line-clamp-2">{rp.title}</h3>
+                    <span className="text-electric-sapphire text-[10px] font-black uppercase tracking-widest mb-3 block">{rp.category}</span>
+                    <h3 className="text-lg font-bold text-white group-hover:text-electric-sapphire transition-colors mb-4 line-clamp-2">{rp.title}</h3>
                     <div className="mt-auto flex items-center gap-2 text-gray-500 text-xs font-medium">
-                       <Clock size={12} className="text-gold" /> {rp.readingTime}
+                       <Clock size={12} className="text-electric-sapphire" /> {rp.readingTime}
                     </div>
                   </div>
                 </article>

@@ -7,7 +7,7 @@ export default function BankAccountServices() {
       subtitle="Elite Corporate Banking Introductions"
       heroImage="/images/mainland.png"
       description={[
-        "In the UAE's complex regulatory landscape, opening a corporate bank account is often the most challenging step of business setup. Golden Legacy leverages two decades of leadership in the UAE banking sector to provide our clients with a significant advantage.",
+        "In the UAE's complex regulatory landscape, opening a corporate bank account is often the most challenging step of business setup. Juno BizHub leverages two decades of leadership in the UAE banking sector to provide our clients with a significant advantage.",
         "We don't just provide a list of banks; we provide direct introductions to senior relationship managers and assist in structuring your corporate documents to meet the rigorous 'Know Your Customer' (KYC) and compliance standards of Tier-1 UAE banks.",
         "Our team specializes in navigating the requirements for multi-currency accounts, international trade facilities, and digital banking platforms, ensuring your business has the financial foundation it needs to thrive."
       ]}

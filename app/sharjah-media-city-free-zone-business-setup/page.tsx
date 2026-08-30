@@ -9,7 +9,7 @@ export default function ShamsSetup() {
       description={[
         "Sharjah Media City (Shams), established in 2017, is a world-class creative hub designed to ignite and sustain the growth of media and creative industries in the UAE. Strategically located in Sharjah, Shams provides a highly collaborative and innovative environment for entrepreneurs, freelancers, and large-scale media corporations to flourish.",
         "Shams is more than just a free zone; it is a catalyst for creative talent, offering a simplified and cost-effective approach to business setup. With a focus on the digital and media landscape, it provides a wide array of licensable activities that range from creative design and content production to social media marketing and e-commerce. Its flexibility allows businesses to incorporate multiple activities under a single license, providing unmatched value for money.",
-        "At Golden Legacy, we help you tap into the 'Shams Advantage,' ensuring your creative vision is backed by a secure legal structure and an optimized licensing framework that facilitates easy corporate bank account opening and rapid visa processing."
+        "At Juno BizHub, we help you tap into the 'Shams Advantage,' ensuring your creative vision is backed by a secure legal structure and an optimized licensing framework that facilitates easy corporate bank account opening and rapid visa processing."
       ]}
       advantages={[
         "100% Foreign Ownership and full management control of your entity",
@@ -57,7 +57,7 @@ export default function ShamsSetup() {
         },
         {
           title: "Administrative Excellence",
-          content: "Golden Legacy manages the entire SHAMS setup journey—from initial trade name reservation to the final issuance of the Establishment Card. We ensure your business is 'bank-ready' by advising on the correct activity mix, facilitating smooth communication with UAE-based financial institutions."
+          content: "Juno BizHub manages the entire SHAMS setup journey—from initial trade name reservation to the final issuance of the Establishment Card. We ensure your business is 'bank-ready' by advising on the correct activity mix, facilitating smooth communication with UAE-based financial institutions."
         }
       ]}
     />

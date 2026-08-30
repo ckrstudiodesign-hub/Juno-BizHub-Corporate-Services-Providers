@@ -39,7 +39,7 @@ export default function FaqAccordion({ title = "Frequently Asked Questions", faq
       <SchemaMarkup type="FAQPage" data={faqSchema} />
       
       <div className="flex items-center gap-4 mb-8">
-        <div className="w-8 h-px bg-gold"></div>
+        <div className="w-8 h-px bg-electric-sapphire"></div>
         <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight m-0">{title}</h2>
       </div>
 
@@ -49,17 +49,17 @@ export default function FaqAccordion({ title = "Frequently Asked Questions", faq
           return (
             <div 
               key={idx} 
-              className={`border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'bg-white/5 border-gold/30' : 'bg-transparent hover:bg-white/[0.02]'}`}
+              className={`border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'bg-white/5 border-electric-sapphire/30' : 'bg-transparent hover:bg-white/[0.02]'}`}
             >
               <button 
                 onClick={() => setOpenIndex(isOpen ? null : idx)}
                 className="w-full flex items-center justify-between p-6 text-left"
                 aria-expanded={isOpen}
               >
-                <h3 className={`font-bold pr-8 transition-colors ${isOpen ? 'text-gold' : 'text-white'}`}>
+                <h3 className={`font-bold pr-8 transition-colors ${isOpen ? 'text-electric-sapphire' : 'text-white'}`}>
                   {faq.question}
                 </h3>
-                <ChevronDown className={`shrink-0 transition-transform duration-300 text-gray-500 ${isOpen ? 'rotate-180 text-gold' : ''}`} />
+                <ChevronDown className={`shrink-0 transition-transform duration-300 text-gray-500 ${isOpen ? 'rotate-180 text-electric-sapphire' : ''}`} />
               </button>
               
               <div 

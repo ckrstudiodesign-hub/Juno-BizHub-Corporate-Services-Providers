@@ -8,7 +8,7 @@ export default function ProfessionalLicense() {
       heroImage="/images/mainland.png"
       description={[
         "Professional License is suited for professionals engaged in providing services. A salient feature of this business type is 100% ownership, making the professional the sole owner with a UAE national as a local service agent.",
-        "It is important to consult with an expert like Golden Legacy to obtain a detailed breakdown of the professional license cost in Dubai."
+        "It is important to consult with an expert like Juno BizHub to obtain a detailed breakdown of the professional license cost in Dubai."
       ]}
       advantages={[
         "100% Foreign Ownership",
@@ -42,7 +42,7 @@ export default function ProfessionalLicense() {
         },
         {
           title: "Documents required",
-          content: "Golden Legacy assists you in preparing and filing:",
+          content: "Juno BizHub assists you in preparing and filing:",
           list: [
             "Application Form",
             "Passport copies of owners and partners",
@@ -54,7 +54,7 @@ export default function ProfessionalLicense() {
           ]
         },
         {
-          title: "How Golden Legacy assists you",
+          title: "How Juno BizHub assists you",
           content: "We streamline the process by:",
           list: [
             "Getting approvals from govt departments",

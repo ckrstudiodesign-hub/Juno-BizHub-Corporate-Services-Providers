@@ -85,7 +85,7 @@ const ClientReviews = () => {
           <Star
             key={i}
             size={16}
-            className={`${i < Math.floor(rating) ? 'fill-gold text-gold' : i < rating ? 'fill-gold text-gold opacity-50' : 'text-gray-400'}`}
+            className={`${i < Math.floor(rating) ? 'fill-electric-sapphire text-electric-sapphire' : i < rating ? 'fill-electric-sapphire text-electric-sapphire opacity-50' : 'text-gray-400'}`}
           />
         ))}
       </div>
@@ -95,8 +95,8 @@ const ClientReviews = () => {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden bg-[#030303]">
       {/* Decorative Background */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gold/5 blur-[120px] rounded-full -ml-48 -mt-48"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 blur-[120px] rounded-full -mr-48 -mb-48"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-electric-sapphire/5 blur-[120px] rounded-full -ml-48 -mt-48"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-electric-sapphire/5 blur-[120px] rounded-full -mr-48 -mb-48"></div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section Header */}
@@ -104,12 +104,12 @@ const ClientReviews = () => {
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-gold font-black tracking-[0.4em] uppercase text-xs"
+            className="text-electric-sapphire font-black tracking-[0.4em] uppercase text-xs"
           >
             Client Success Stories
           </motion.span>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase text-white">
-            Trusted by <span className="text-gold">Global Entrepreneurs</span>
+            Trusted by <span className="text-electric-sapphire">Global Entrepreneurs</span>
           </h2>
         </div>
 
@@ -124,7 +124,7 @@ const ClientReviews = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0 p-8 md:p-10 rounded-[32px] bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:border-gold/30 transition-all duration-300 flex flex-col justify-between"
+                className="absolute inset-0 p-8 md:p-10 rounded-[32px] bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:border-electric-sapphire/30 transition-all duration-300 flex flex-col justify-between"
               >
                 {/* Review Content */}
                 <div className="space-y-4">
@@ -133,7 +133,7 @@ const ClientReviews = () => {
                       <h4 className="text-lg md:text-xl font-black text-white">
                         {reviews[currentIndex].name}
                       </h4>
-                      <p className="text-xs text-gold font-bold uppercase tracking-widest">
+                      <p className="text-xs text-electric-sapphire font-bold uppercase tracking-widest">
                         {reviews[currentIndex].location}
                       </p>
                     </div>
@@ -157,7 +157,7 @@ const ClientReviews = () => {
                       key={i}
                       onClick={() => setCurrentIndex(i)}
                       className={`h-2 rounded-full transition-all duration-300 ${
-                        i === currentIndex ? 'w-8 bg-gold' : 'w-2 bg-white/20 hover:bg-white/40'
+                        i === currentIndex ? 'w-8 bg-electric-sapphire' : 'w-2 bg-white/20 hover:bg-white/40'
                       }`}
                       aria-label={`Go to review ${i + 1}`}
                     />
@@ -174,7 +174,7 @@ const ClientReviews = () => {
               <div className="flex items-start gap-6">
                 {/* Google Logo & Rating */}
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-gold to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-electric-sapphire to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-2xl font-black text-black">G</span>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ const ClientReviews = () => {
                 <div className="flex-1 space-y-3">
                   <div className="space-y-1">
                     <h4 className="text-xl md:text-2xl font-black text-white">Google Reviews</h4>
-                    <p className="text-xs text-gray-400 uppercase tracking-widest">Golden Legacy Consultancy</p>
+                    <p className="text-xs text-gray-400 uppercase tracking-widest">Juno BizHub Consultancy</p>
                   </div>
 
                   {/* Rating */}
@@ -192,7 +192,7 @@ const ClientReviews = () => {
                         <Star
                           key={i}
                           size={18}
-                          className={`${i < 4 ? 'fill-gold text-gold' : i < 4.9 ? 'fill-gold text-gold opacity-50' : 'text-gray-400'}`}
+                          className={`${i < 4 ? 'fill-electric-sapphire text-electric-sapphire' : i < 4.9 ? 'fill-electric-sapphire text-electric-sapphire opacity-50' : 'text-gray-400'}`}
                         />
                       ))}
                     </div>
@@ -207,11 +207,11 @@ const ClientReviews = () => {
             {/* Trust Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 rounded-[24px] bg-white/5 backdrop-blur-xl border border-white/10 text-center space-y-2">
-                <h3 className="text-3xl md:text-4xl font-black text-gold">500+</h3>
+                <h3 className="text-3xl md:text-4xl font-black text-electric-sapphire">500+</h3>
                 <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Happy Clients</p>
               </div>
               <div className="p-6 rounded-[24px] bg-white/5 backdrop-blur-xl border border-white/10 text-center space-y-2">
-                <h3 className="text-3xl md:text-4xl font-black text-gold">8+</h3>
+                <h3 className="text-3xl md:text-4xl font-black text-electric-sapphire">8+</h3>
                 <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Years Experience</p>
               </div>
             </div>

@@ -9,7 +9,7 @@ export default function HamriyahSetup() {
       description={[
         "The Hamriyah Free Zone (HFZA), established in 1995, is an industrial powerhouse located in Sharjah and a key driver of the UAE's non-oil economy. Spanning a massive area with direct access to a specialized 14-meter deep-water port, HFZA is globally recognized as the primary hub for the oil & gas, petrochemicals, and steel fabrication industries in the Middle East.",
         "HFZA provides an incredible diversity of infrastructure, from high-end executive suites for consultants to massive industrial plots for heavy manufacturing. It is home to thousands of companies from over 160 countries, attracted by its business-oriented regulatory framework and its ability to provide sea-to-land logistics that are unrivaled in the northern emirates.",
-        "With Golden Legacy's specialized industrial advisory, setting up in Hamriyah means gaining immediate access to global shipping lanes and a tax-exempt environment designed specifically for large-scale production and international distribution."
+        "With Juno BizHub's specialized industrial advisory, setting up in Hamriyah means gaining immediate access to global shipping lanes and a tax-exempt environment designed specifically for large-scale production and international distribution."
       ]}
       advantages={[
         "100% Foreign Ownership and full capital/profit repatriation",
@@ -45,7 +45,7 @@ export default function HamriyahSetup() {
           ]
         },
         {
-          title: "Scale Your Business with Golden Legacy",
+          title: "Scale Your Business with Juno BizHub",
           content: "The legal drafting and activity selection for industrial zones like Hamriyah require a high level of technical precision. Our consultants manage the entire lifecycle—from environmental approvals to final trade license issuance—ensuring your entity is positioned for long-term industrial success and seamless corporate banking integration."
         }
       ]}

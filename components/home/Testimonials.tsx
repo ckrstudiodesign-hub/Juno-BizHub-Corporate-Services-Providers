@@ -9,7 +9,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'Founder, Tech Startup Dubai',
-    text: 'Golden Legacy transformed our business setup process. What we thought would take months was completed in weeks. Their transparency and expertise are unmatched.',
+    text: 'Juno BizHub transformed our business setup process. What we thought would take months was completed in weeks. Their transparency and expertise are unmatched.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
     rating: 5
   },
@@ -121,13 +121,13 @@ const Testimonials = () => {
 
   return (
     <section className="section-padding bg-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 blur-[150px] rounded-full opacity-50 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-electric-sapphire/5 blur-[150px] rounded-full opacity-50 pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10 mb-12">
         <div className="text-center space-y-4">
-          <span className="text-gold font-black tracking-[0.4em] uppercase text-xs block">CLIENT STORIES</span>
+          <span className="text-electric-sapphire font-black tracking-[0.4em] uppercase text-xs block">CLIENT STORIES</span>
           <h2 className="text-3xl md:text-5xl font-black text-black tracking-tighter uppercase">
-            What <span className="text-gold">Founders Say</span>
+            What <span className="text-electric-sapphire">Founders Say</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-medium">
             Real experiences from entrepreneurs who transformed their vision into thriving UAE businesses.
@@ -152,11 +152,11 @@ const Testimonials = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: idx * 0.1 }}
             >
-              <div className="bg-white border border-gray-100 rounded-3xl p-8 h-full shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:border-gold/30">
+              <div className="bg-white border border-gray-100 rounded-3xl p-8 h-full shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:border-electric-sapphire/30">
                 {/* Stars */}
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} size={18} className="fill-gold text-gold" />
+                    <Star key={i} size={18} className="fill-electric-sapphire text-electric-sapphire" />
                   ))}
                 </div>
 

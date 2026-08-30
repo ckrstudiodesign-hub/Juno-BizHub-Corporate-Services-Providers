@@ -9,7 +9,7 @@ export default function DIFCSetup() {
       description={[
         "The Dubai International Financial Centre (DIFC) is the leading global financial hub in the Middle East, Africa, and South Asia (MEASA) region. It is a world-class financial ecosystem that operates under an independent, internationally recognized regulatory and legal framework based on English Common Law. This unique jurisdiction provides a stable and secure platform for the world's most prestigious financial institutions and global corporations.",
         "DIFC is home to a massive range of businesses, from global Tier-1 banks and asset management firms to innovative FinTech startups and legal consultancies. It serves as a bridge between the economies of the East and the West, providing companies with direct access to the region's vast wealth and capital markets.",
-        "Golden Legacy offers elite advisory services for DIFC establishment, ensuring your business structure complies with the high standards of the Dubai Financial Services Authority (DFSA). We guide you through the complexities of 'Common Law' entity formation, helping you secure a foothold in one of the world's most influential financial districts."
+        "Juno BizHub offers elite advisory services for DIFC establishment, ensuring your business structure complies with the high standards of the Dubai Financial Services Authority (DFSA). We guide you through the complexities of 'Common Law' entity formation, helping you secure a foothold in one of the world's most influential financial districts."
       ]}
       advantages={[
         "100% Foreign Ownership and complete capital/profit repatriation",

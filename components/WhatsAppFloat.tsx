@@ -34,7 +34,7 @@ const WhatsAppFloat = () => {
       </motion.div>
 
       <motion.a
-        href="https://wa.me/971556656007"
+        href="https://wa.me/971541290038"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0.5 }}

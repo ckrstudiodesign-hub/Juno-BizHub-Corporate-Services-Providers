@@ -9,7 +9,7 @@ export default function RAKEZSetup() {
       description={[
         "The Ras Al Khaimah Economic Zone (RAKEZ) is a powerhouse of economic activity in the northern UAE, established to provide cost-effective business solutions for entrepreneurs, startups, and industrial giants alike. Strategically located at the crossroads of east and west, RAKEZ is home to over 15,000 companies from more than 100 countries, representing over 50 diverse industries.",
         "RAKEZ is unique in its ability to offer tailored solutions for both free zone and non-free zone (mainland) entities. Its expansive industrial parks, specialized zones for media and education, and modern business centers provide an all-encompassing environment for business growth. The zone is committed to providing a simplified registration process and a customer-centric approach that removes administrative hurdles for international investors.",
-        "Golden Legacy partners with RAKEZ to deliver highly competitive setup packages that maximize your return on investment. Whether you need a virtual office or a massive industrial warehouse, we ensure your setup is handled with precision and speed."
+        "Juno BizHub partners with RAKEZ to deliver highly competitive setup packages that maximize your return on investment. Whether you need a virtual office or a massive industrial warehouse, we ensure your setup is handled with precision and speed."
       ]}
       advantages={[
         "100% Foreign Ownership and full capital/profit repatriation",
@@ -63,7 +63,7 @@ export default function RAKEZSetup() {
         },
         {
           title: "Ease of Doing Business",
-          content: "The RAKEZ 'Portal 360' allows for the digital management of all corporate tasks. This transparency, combined with a dedicated account manager provided through Golden Legacy, ensures that your business operations in the Northern Emirates are smooth, compliant, and poised for expansion into the GCC markets."
+          content: "The RAKEZ 'Portal 360' allows for the digital management of all corporate tasks. This transparency, combined with a dedicated account manager provided through Juno BizHub, ensures that your business operations in the Northern Emirates are smooth, compliant, and poised for expansion into the GCC markets."
         }
       ]}
     />

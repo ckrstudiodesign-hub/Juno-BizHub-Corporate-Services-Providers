@@ -1,12 +1,12 @@
 ---
-title: "Business Setup Dubai & Corporate Services UAE | Golden Legacy"
-meta_description: "Golden Legacy helps founders launch in Dubai with mainland, free zone, offshore, banking, VAT, PRO, and corporate advisory services."
-canonical: https://www.goldenlegacy.ae/
+title: "Business Setup Dubai & Corporate Services UAE | Juno BizHub"
+meta_description: "Juno BizHub helps founders launch in Dubai with mainland, free zone, offshore, banking, VAT, PRO, and corporate advisory services."
+canonical: https://www.junobizhub.com/
 ---
 
-# Golden Legacy — Business Setup Dubai & Corporate Services UAE
+# Juno BizHub — Business Setup Dubai & Corporate Services UAE
 
-**Summary:** Golden Legacy provides end-to-end corporate services in Dubai and the UAE for entrepreneurs and companies seeking mainland, free zone, or offshore setups. Core offerings include company formation, bank account opening, VAT and corporate tax advisory, PRO services, bookkeeping, legal translation, and residency (Golden Visa) support.
+**Summary:** Juno BizHub provides end-to-end corporate services in Dubai and the UAE for entrepreneurs and companies seeking mainland, free zone, or offshore setups. Core offerings include company formation, bank account opening, VAT and corporate tax advisory, PRO services, bookkeeping, legal translation, and residency (Golden Visa) support.
 
 ## Key Services
 - Mainland & Free Zone Company Formation (LLC, Professional License, Branch Offices)
@@ -31,14 +31,14 @@ canonical: https://www.goldenlegacy.ae/
 - JSON-LD for Organization, LocalBusiness, and Website is embedded globally.
 
 ## Quick FAQ (derived from site content)
-- Q: Where is Golden Legacy located?
-  - A: Headquarters on Sheikh Zayed Road, Dubai, UAE.
+- Q: Where is Juno BizHub located?
+  - A: Headquarters on 106 Sheikh Zayed Rd - Trade Center First - Dubai, Aspin Commercial Tower
 - Q: How do I contact the company?
-  - A: Phone +971 55 665 6007 or via the secure contact form at /contact.
+  - A: Phone +971 54 129 0038 or via the secure contact form at /contact.
 
 ## Contact
-- Phone: +971 55 665 6007
-- Email: goldenlegacy295@gmail.com
+- Phone: +971 54 129 0038
+- Email: info.junobh@gmail.com
 
 ## Important Links
 - /services

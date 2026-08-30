@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { teamMembers } from '@/lib/team-data';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.goldenlegacy.ae';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.junobizhub.com';
 
 // Static routes
 const staticRoutes = [

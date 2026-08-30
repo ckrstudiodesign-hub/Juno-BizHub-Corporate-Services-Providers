@@ -1,5 +1,5 @@
 {
-  "name": "golden-legacy",
+  "name": "juno-bizhub",
   "private": true,
   "scripts": {
     "dev": "next dev",

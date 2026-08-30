@@ -1,11 +1,11 @@
 /*
  * ╔═══════════════════════════════════════════════════════════════════╗
- * ║           GOLDEN LEGACY CORPORATE SERVICES WEBSITE                 ║
+ * ║           Juno BizHub Corporate Services Providers WEBSITE                 ║
  * ║                                                                   ║
  * ║         Designed & Developed by CKR Creatives                     ║
  * ║         Full Stack Development, UI/UX Design, Performance         ║
  * ║                                                                   ║
- * ║  © 2026 Golden Legacy Corporate Services. All rights reserved.    ║
+ * ║  © 2026 Juno BizHub Corporate Services Providers. All rights reserved.    ║
  * ╚═══════════════════════════════════════════════════════════════════╝
  */
 
@@ -18,7 +18,7 @@ import LeadModal from "@/components/LeadModal";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import SchemaMarkup, { GlobalSchemas } from "@/components/seo/SchemaMarkup";
 import Analytics from "@/components/Analytics";
-import DisableLegacyServiceWorker from "@/components/DisableLegacyServiceWorker";
+import DisableServiceWorker from "@/components/DisableServiceWorker";
 import type { Metadata } from "next";
 import { Inter, Roboto_Slab, Roboto_Condensed } from "next/font/google";
 
@@ -41,7 +41,7 @@ const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.goldenlegacy.ae";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.junobizhub.com";
 
 import { constructMetadata } from "@/lib/seo";
 
@@ -56,7 +56,7 @@ export default function RootLayout({
     <html lang="en-AE" className="scroll-smooth">
       <body className={`${inter.variable} ${robotoSlab.variable} ${robotoCondensed.variable} font-sans antialiased bg-background text-foreground`}>
         <Analytics />
-        <DisableLegacyServiceWorker />
+        <DisableServiceWorker />
         <SchemaMarkup type="Organization" data={GlobalSchemas.Organization} />
         <SchemaMarkup type="ProfessionalService" data={GlobalSchemas.LocalBusiness} />
         <SchemaMarkup type="WebSite" data={GlobalSchemas.WebSite} />

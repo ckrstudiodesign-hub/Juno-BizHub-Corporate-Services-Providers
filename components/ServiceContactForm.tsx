@@ -92,7 +92,7 @@ const ServiceContactForm = ({
 
       await submitToWeb3Forms({
         accessKey,
-        subject: 'New Service Inquiry - Golden Legacy',
+        subject: 'New Service Inquiry - Juno BizHub',
         name,
         email,
         phone,
@@ -121,7 +121,7 @@ const ServiceContactForm = ({
 
   if (status === 'success') {
     return (
-      <div className="bg-white p-8 rounded-[32px] border border-gold/20 text-center space-y-4">
+      <div className="bg-white p-8 rounded-[32px] border border-electric-sapphire/20 text-center space-y-4">
         <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto border border-green-200">
           <CheckCircle2 className="text-green-600" size={28} />
         </div>
@@ -134,7 +134,7 @@ const ServiceContactForm = ({
   return (
     <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-xl relative overflow-hidden group">
       {/* Decorative Corner */}
-      <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 blur-2xl rounded-full -mr-12 -mt-12 transition-all group-hover:bg-gold/10"></div>
+      <div className="absolute top-0 right-0 w-24 h-24 bg-electric-sapphire/5 blur-2xl rounded-full -mr-12 -mt-12 transition-all group-hover:bg-electric-sapphire/10"></div>
       
       <div className="relative z-10 space-y-6">
         <div className="space-y-1">
@@ -159,7 +159,7 @@ const ServiceContactForm = ({
                 required
                 type="text" 
                 placeholder="Your Name" 
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-gold/40 focus:ring-1 focus:ring-gold/20 outline-none transition-all font-medium"
+                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-electric-sapphire/40 focus:ring-1 focus:ring-electric-sapphire/20 outline-none transition-all font-medium"
               />
             </div>
           </div>
@@ -172,7 +172,7 @@ const ServiceContactForm = ({
                 required
                 type="email" 
                 placeholder="Email Address" 
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-gold/40 focus:ring-1 focus:ring-gold/20 outline-none transition-all font-medium"
+                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-electric-sapphire/40 focus:ring-1 focus:ring-electric-sapphire/20 outline-none transition-all font-medium"
               />
             </div>
           </div>
@@ -185,7 +185,7 @@ const ServiceContactForm = ({
                 required
                 type="tel" 
                 placeholder="Phone Number" 
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-gold/40 focus:ring-1 focus:ring-gold/20 outline-none transition-all font-medium"
+                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-electric-sapphire/40 focus:ring-1 focus:ring-electric-sapphire/20 outline-none transition-all font-medium"
               />
             </div>
           </div>
@@ -196,7 +196,7 @@ const ServiceContactForm = ({
               <select 
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-gold/40 focus:ring-1 focus:ring-gold/20 outline-none transition-all font-medium appearance-none cursor-pointer"
+                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-electric-sapphire/40 focus:ring-1 focus:ring-electric-sapphire/20 outline-none transition-all font-medium appearance-none cursor-pointer"
               >
                 {!allServices.includes(defaultService) && (
                   <option value={defaultService}>{defaultService}</option>
@@ -230,7 +230,7 @@ const ServiceContactForm = ({
                 ref={messageRef}
                 placeholder="Special Requirements..." 
                 rows={3}
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-gold/40 focus:ring-1 focus:ring-gold/20 outline-none transition-all font-medium resize-none"
+                className="w-full bg-gray-50 border border-gray-100 rounded-xl py-3 pl-12 pr-4 text-sm text-black focus:bg-white focus:border-electric-sapphire/40 focus:ring-1 focus:ring-electric-sapphire/20 outline-none transition-all font-medium resize-none"
               ></textarea>
             </div>
           </div>
@@ -247,7 +247,7 @@ const ServiceContactForm = ({
           <button 
             type="submit" 
             disabled={status === 'sending'}
-            className="btn-premium w-full py-4 !rounded-xl text-sm font-black uppercase tracking-widest flex items-center justify-center gap-2 shadow-lg hover:shadow-gold/20 disabled:opacity-50"
+            className="btn-premium w-full py-4 !rounded-xl text-sm font-black uppercase tracking-widest flex items-center justify-center gap-2 shadow-lg hover:shadow-electric-sapphire/20 disabled:opacity-50"
           >
             {status === 'sending' ? 'Processing...' : 'Request Consultation'}
             <Send size={14} />

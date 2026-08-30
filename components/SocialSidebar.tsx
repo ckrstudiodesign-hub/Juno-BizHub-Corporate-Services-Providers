@@ -8,7 +8,7 @@ const SocialSidebar = () => {
   const socials = [
     {
       name: 'WhatsApp',
-      href: 'https://wa.me/971556656007',
+      href: 'https://wa.me/971541290038',
       color: '#25D366',
       icon: (
         <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -18,13 +18,13 @@ const SocialSidebar = () => {
     },
     {
       name: 'Call Us',
-      href: 'tel:+971556656007',
+      href: 'tel:+971 54 129 0038',
       color: '#000',
       icon: <Phone size={20} fill="currentColor" />
     },
     {
       name: 'Instagram',
-      href: 'https://www.instagram.com/goldenlegacy.ae/',
+      href: 'https://www.instagram.com/junobizhub.com/',
       color: '#E4405F',
       icon: (
         <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -34,7 +34,7 @@ const SocialSidebar = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/company/golden-legacy-corporate-service/',
+      href: 'https://www.linkedin.com/company/juno-bizhub-corporate-service/',
       color: '#0077B5',
       icon: (
         <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -54,7 +54,7 @@ const SocialSidebar = () => {
     },
     {
       name: 'Gmail',
-      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=goldenlegacy295%40gmail.com',
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=junobizhub295%40gmail.com',
       color: '#DB4437',
       icon: <Mail size={20} strokeWidth={2.5} />
     }
@@ -67,21 +67,21 @@ const SocialSidebar = () => {
       transition={{ delay: 0.1, duration: 0.8 }}
       className="fixed right-0 top-1/2 -translate-y-1/2 z-[150] hidden lg:flex flex-col items-end"
     >
-      <div className="flex flex-col gap-1 p-1 bg-gold/10 backdrop-blur-xl rounded-l-2xl border-y border-l border-gold/30 shadow-2xl">
+      <div className="flex flex-col gap-1 p-1 bg-electric-sapphire/10 backdrop-blur-xl rounded-l-2xl border-y border-l border-electric-sapphire/30 shadow-2xl">
         {socials.map((item, idx) => (
           <a 
             key={item.name} 
             href={item.href} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-10 h-10 flex items-center justify-center bg-gold text-black hover:bg-white transition-all duration-300 relative group first:rounded-tl-xl last:rounded-bl-xl border-b border-black/5 last:border-0"
+            className="w-10 h-10 flex items-center justify-center bg-electric-sapphire text-black hover:bg-white transition-all duration-300 relative group first:rounded-tl-xl last:rounded-bl-xl border-b border-black/5 last:border-0"
           >
             <div className="scale-90 group-hover:scale-110 transition-transform" style={{ color: item.color }}>
               {item.icon}
             </div>
             
             {/* Tooltip */}
-            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-black text-gold text-[10px] font-black uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all pointer-events-none whitespace-nowrap border border-gold/20 shadow-2xl translate-x-2 group-hover:translate-x-0">
+            <span className="absolute right-full mr-4 px-3 py-1.5 rounded-lg bg-black text-electric-sapphire text-[10px] font-black uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all pointer-events-none whitespace-nowrap border border-electric-sapphire/20 shadow-2xl translate-x-2 group-hover:translate-x-0">
               {item.name}
             </span>
           </a>

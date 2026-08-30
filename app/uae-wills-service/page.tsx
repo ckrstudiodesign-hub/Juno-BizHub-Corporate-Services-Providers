@@ -4,10 +4,10 @@ export default function UAEWills() {
   return (
     <ServicePage
       title="UAE Will Service"
-      subtitle="Legacy Protection & Asset Distribution"
+      subtitle="Asset Protection & Asset Distribution"
       heroImage="/images/mainland.png"
       description={[
-        "In the UAE, the distribution of assets for deceased expatriates is subject to local laws unless a legally registered Will is in place. Golden Legacy provides specialized advisory for the drafting and registration of Wills to ensure your legacy is protected and your assets are distributed exactly as you intend.",
+        "In the UAE, the distribution of assets for deceased expatriates is subject to local laws unless a legally registered Will is in place. Juno BizHub provides specialized advisory for the drafting and registration of Wills to ensure your bizhub is protected and your assets are distributed exactly as you intend.",
         "We cater to both Muslim and Non-Muslim residents, navigating the specific legal frameworks of the DIFC Courts and the Dubai Courts (Notary Public). Our service ensures that your family, properties, and corporate shares are shielded from the default application of Sharia principles if you are a Non-Muslim, or correctly aligned with them if you are a Muslim.",
         "Securing a Will in the UAE is not just a legal requirement but a fundamental part of responsible financial planning for anyone holding assets, including real estate, bank accounts, and company shares."
       ]}
@@ -18,7 +18,7 @@ export default function UAEWills() {
         "Protection of corporate shares and business continuity",
         "Minimized legal delays and court freezes on bank accounts",
         "DIFC Court registration for global recognition (Non-Muslims)",
-        "Dubai Court registration for Sharia-compliant legacy (Muslims)",
+        "Dubai Court registration for Sharia-compliant estate (Muslims)",
         "Expert legal drafting in both English and Arabic",
         "Strategic advice on inheritance tax planning and asset protection",
         "Seamless transition of power of attorney where applicable"

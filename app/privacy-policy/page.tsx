@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { MapPin, Mail, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Golden Legacy Corporate Services',
+  title: 'Privacy Policy — Juno BizHub Corporate Services Providers',
   description:
-    'Privacy Policy for Golden Legacy Corporate Services Provider LLC. How we collect, use, store and protect personal data when you use goldenlegacy.ae.',
+    'Privacy Policy for Juno BizHub Corporate Services Providers LLC. How we collect, use, store and protect personal data when you use junobizhub.com.',
   alternates: { canonical: '/privacy-policy' },
 };
 
@@ -30,18 +30,18 @@ export default function PrivacyPolicyPage() {
             <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-6">
               <h4 className="text-sm font-black uppercase text-white/80 mb-4">On This Page</h4>
               <ul className="space-y-3 text-gray-400 text-sm">
-                <li><a href="#introduction" className="hover:text-gold">Introduction</a></li>
-                <li><a href="#who-we-are" className="hover:text-gold">Who We Are</a></li>
-                <li><a href="#information-we-collect" className="hover:text-gold">Information We Collect</a></li>
-                <li><a href="#how-we-use" className="hover:text-gold">How We Use Your Information</a></li>
-                <li><a href="#legal-basis" className="hover:text-gold">Legal Basis (PDPL)</a></li>
-                <li><a href="#sharing" className="hover:text-gold">Sharing & Disclosure</a></li>
-                <li><a href="#international" className="hover:text-gold">International Transfers</a></li>
-                <li><a href="#retention" className="hover:text-gold">Data Retention</a></li>
-                <li><a href="#security" className="hover:text-gold">Data Security</a></li>
-                <li><a href="#your-rights" className="hover:text-gold">Your Rights</a></li>
-                <li><a href="#cookies" className="hover:text-gold">Cookies</a></li>
-                <li><a href="#contact" className="hover:text-gold">Contact Us</a></li>
+                <li><a href="#introduction" className="hover:text-electric-sapphire">Introduction</a></li>
+                <li><a href="#who-we-are" className="hover:text-electric-sapphire">Who We Are</a></li>
+                <li><a href="#information-we-collect" className="hover:text-electric-sapphire">Information We Collect</a></li>
+                <li><a href="#how-we-use" className="hover:text-electric-sapphire">How We Use Your Information</a></li>
+                <li><a href="#legal-basis" className="hover:text-electric-sapphire">Legal Basis (PDPL)</a></li>
+                <li><a href="#sharing" className="hover:text-electric-sapphire">Sharing & Disclosure</a></li>
+                <li><a href="#international" className="hover:text-electric-sapphire">International Transfers</a></li>
+                <li><a href="#retention" className="hover:text-electric-sapphire">Data Retention</a></li>
+                <li><a href="#security" className="hover:text-electric-sapphire">Data Security</a></li>
+                <li><a href="#your-rights" className="hover:text-electric-sapphire">Your Rights</a></li>
+                <li><a href="#cookies" className="hover:text-electric-sapphire">Cookies</a></li>
+                <li><a href="#contact" className="hover:text-electric-sapphire">Contact Us</a></li>
               </ul>
             </div>
           </nav>
@@ -51,13 +51,13 @@ export default function PrivacyPolicyPage() {
               <section id="introduction" className="prose prose-xl max-w-none">
                 <h2>1. Introduction</h2>
                 <p>
-                  Golden Legacy Corporate Services Provider LLC (“Golden Legacy”, “we”, “us” or
+                  Juno BizHub Corporate Services Providers LLC (“Juno BizHub”, “we”, “us” or
                   “our”) is committed to protecting your privacy and handling your personal data in a
                   lawful, fair and transparent manner.
                 </p>
                 <p>
                   This Privacy Policy explains how we collect, use, disclose and protect personal data
-                  when you visit our website goldenlegacy.ae or interact with us in relation to our
+                  when you visit our website junobizhub.com or interact with us in relation to our
                   corporate services, business setup, visa, and banking assistance in the United Arab
                   Emirates (UAE). By using our website or providing your personal data to us, you
                   acknowledge that you have read and understood this Privacy Policy.
@@ -67,15 +67,15 @@ export default function PrivacyPolicyPage() {
               <section id="who-we-are" className="mt-8">
                 <h3>2. Who We Are</h3>
                 <p>
-                  <strong>Company name:</strong> Golden Legacy Corporate Services Provider LLC<br />
-                  <strong>Office address:</strong> M 06, Emgate Building, 214 Sheikh Zayed Road, Near
+                  <strong>Company name:</strong> Juno BizHub Corporate Services Providers LLC<br />
+                  <strong>Office address:</strong> 106 Sheikh Zayed Rd - Trade Center First - Dubai, Aspin Commercial Tower,
                   Business Bay Metro Station, Dubai, United Arab Emirates<br />
-                  <strong>Website:</strong> <a href="https://goldenlegacy.ae" className="text-gold">https://goldenlegacy.ae</a><br />
-                  <strong>Contact email:</strong> <a href="mailto:info@goldenlegacy.ae" className="text-gold">info@goldenlegacy.ae</a><br />
-                  <strong>Contact number:</strong> <a href="tel:+971556656007" className="text-gold">+971 55 665 6007</a>
+                  <strong>Website:</strong> <a href="https://junobizhub.com" className="text-electric-sapphire">https://junobizhub.com</a><br />
+                  <strong>Contact email:</strong> <a href="mailto:info.junobh@gmail.com" className="text-electric-sapphire">info.junobh@gmail.com</a><br />
+                  <strong>Contact number:</strong> <a href="tel:+971 54 129 0038" className="text-electric-sapphire">+971 54 129 0038</a>
                 </p>
                 <p>
-                  Golden Legacy acts as a “data controller” when we decide how and why your personal
+                  Juno BizHub acts as a “data controller” when we decide how and why your personal
                   data is processed.
                 </p>
               </section>
@@ -230,43 +230,43 @@ export default function PrivacyPolicyPage() {
                 <p>If you have any questions about this Privacy Policy, our data practices, or if you wish to exercise your rights, you can contact us at:</p>
                 <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold">
+                    <div className="w-12 h-12 rounded-xl bg-electric-sapphire/10 flex items-center justify-center text-electric-sapphire">
                       <MapPin />
                     </div>
                     <div>
                       <p className="font-bold">Office</p>
-                      <p className="text-sm text-gray-700">M 06, Emgate Building, 214 Sheikh Zayed Road<br/>Near Business Bay Metro Station<br/>Dubai, United Arab Emirates</p>
+                      <p className="text-sm text-gray-700">106 Sheikh Zayed Rd - Trade Center First - Dubai, Aspin Commercial Tower</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold">
+                    <div className="w-12 h-12 rounded-xl bg-electric-sapphire/10 flex items-center justify-center text-electric-sapphire">
                       <Mail />
                     </div>
                     <div>
                       <p className="font-bold">Email</p>
-                      <p className="text-sm text-gray-700"><a href="mailto:info@goldenlegacy.ae" className="text-gold">info@goldenlegacy.ae</a></p>
+                      <p className="text-sm text-gray-700"><a href="mailto:info.junobh@gmail.com" className="text-electric-sapphire">info.junobh@gmail.com</a></p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold">
+                    <div className="w-12 h-12 rounded-xl bg-electric-sapphire/10 flex items-center justify-center text-electric-sapphire">
                       <Phone />
                     </div>
                     <div>
                       <p className="font-bold">Phone / WhatsApp</p>
-                      <p className="text-sm text-gray-700"><a href="tel:+971556656007" className="text-gold">+971 55 665 6007</a></p>
+                      <p className="text-sm text-gray-700"><a href="tel:+971 54 129 0038" className="text-electric-sapphire">+971 54 129 0038</a></p>
                     </div>
                   </div>
                 </div>
               </section>
 
               <footer className="mt-12 border-t pt-8">
-                <p className="text-sm text-gray-600">© {new Date().getFullYear()} Golden Legacy Corporate Services Provider LLC. All rights reserved.</p>
+                <p className="text-sm text-gray-600">© {new Date().getFullYear()} Juno BizHub Corporate Services Providers LLC. All rights reserved.</p>
                 <p className="text-sm text-gray-600 mt-2">This policy is subject to UAE law and the UAE Personal Data Protection Law (PDPL).</p>
               </footer>
             </div>
 
             <div className="mt-8 text-sm text-gray-400">
-              <p>For convenience, you can return to the <Link href="/" className="text-gold">homepage</Link> or <Link href="/contact" className="text-gold">contact our team</Link>.</p>
+              <p>For convenience, you can return to the <Link href="/" className="text-electric-sapphire">homepage</Link> or <Link href="/contact" className="text-electric-sapphire">contact our team</Link>.</p>
             </div>
           </article>
         </div>
